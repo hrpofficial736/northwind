@@ -30,7 +30,9 @@ export default function Home () {
     })
   }
   return (
-    <div className="f-c-row gap-10 bg-background text-text w-screen h-screen">
+    <div style={{ backgroundColor: '#B5AF96' }} className="f-c-row gap-10 text-text w-screen h-screen">
+
+      
       <Form submitAction={submitForm} className="f-c-col gap-2" fields={[
         {
           name: "name",
