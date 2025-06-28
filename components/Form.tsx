@@ -19,14 +19,15 @@ const Form = ({ className, fields, submitAction }: FormProps) => {
       {fields.map((field, index) => {
         return (
           <TextField
-            key={index}
-            name={field.name}
-            onChanged={field.onChanged}
-            label={field.label}
-            placeholder={field.placeholder}
-            value={field.value}
-            type={field.type}
-          />
+          key={index}
+          name={field.name}
+          onChanged={field.onChanged}
+          label={field.label}
+          placeholder={field.placeholder}
+          value={field.value ?? ""} 
+          type={field.type}
+        />
+
         );
       })}
       <button type="submit" className="px-3 py-2 rounded bg-text text-background f-c-row cursor-pointer hover:bg-text/60">

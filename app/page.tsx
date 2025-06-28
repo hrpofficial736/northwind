@@ -8,13 +8,15 @@ type FormDataProps = {
   name: string;
   email: string;
   password: string;
+  mobile: number;
 }
 
 export default function Home () {
   const [formData, setFormData] = useState<FormDataProps>({
     name: "",
     email: "",
-    password: ""
+    password: "",
+    mobile: 0
   });
 
   const handleFormChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -53,6 +55,14 @@ export default function Home () {
           value: formData.password,
           onChanged: handleFormChange,
           type: "password"
+        },
+        {
+          name: "mobile",
+          label: "Mobile",
+          placeholder: "Enter your mobile number here...",
+          value: formData.mobile.toString(),
+          onChanged: handleFormChange,
+          type: "number"
         }
       ]} />
     </div>
