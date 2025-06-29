@@ -9,12 +9,12 @@ type FormActionProps = {
 
 
 export async function submitForm (formData: FormData) {
-    console.log({
-        name: formData.get("name"),
-        email: formData.get("email"),
-        password: formData.get("password") 
-    })
-    
-    console.log();
+    const formattedData = new Map(formData.entries());
+
+    try {
+        const result = await fetch()
+    } catch (error) {
+        
+    }
     
 }
