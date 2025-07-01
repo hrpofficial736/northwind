@@ -3,8 +3,8 @@ import React from "react";
 const Train = () => {
   return (
     <svg
-      width="48"
-      height="57"
+      width="80"
+      height="80"
       viewBox="0 0 48 57"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
