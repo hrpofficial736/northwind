@@ -4,7 +4,7 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full h-screen relative overflow-x-hidden">
+    <div className="w-full h-[160vh] relative overflow-x-hidden">
       <video
         autoPlay
         loop
