@@ -10,7 +10,7 @@ const RareLiving = () => {
   return (
     <div className="bg-primary w-full p-[30px_30px] lg:p-[88px_40px] flex flex-col gap-[56px]">
       <h1 className="font-boskaMedium text-[75px] leading-[130%] lg:text-[180px] ">
-        rare living.
+        Your rare living.
       </h1>
 
       {/* List and Travel Options wala dabba */}

@@ -4,22 +4,32 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full max-h-[160vh] relative overflow-hidden">
+    <div className="w-full relative overflow-hidden">
       <video
         autoPlay
         loop
         muted
         playsInline
         src="/videos/hero-video.mp4"
-        className="object-fill aspect-square"
+        className="object-fill "
       />
 
-      <Logo className="absolute z-10 inset-0 left-[50%] mt-10" />
+      <Logo
+        className="
+          absolute z-10 
+          top-10
+          left-1/2 -translate-x-1/2 
+          mt-6 custom580:mt-8 lg:mt-10 
+          w-[60px] custom580:w-[80px] lg:w-[94px]
+        "
+      />
+
+
 
       {/* Hero Component ki headings */}
 
       <div className="absolute inset-0 z-10 flex flex-col justify-between px-4 custom580:px-10 lg:px-20 2xl:px-28 pt-[250px] pb-40 custom580:pb-20">
-        <div className="">
+        <div className="mt-70">
           <h1
             className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text`}
           >
