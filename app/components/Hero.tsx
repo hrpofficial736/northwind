@@ -4,17 +4,17 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div className="w-full relative overflow-hidden">
+    <div className="w-full max-h-[160vh] relative overflow-hidden">
       <video
         autoPlay
         loop
         muted
         playsInline
         src="/videos/hero-video.mp4"
-        className="object-cover lg:aspect-square"
+        className="object-fill aspect-square"
       />
 
-      <Logo className="absolute z-10 inset-0 mt-10 left-1/2" />
+      <Logo className="absolute z-10 inset-0 left-[50%] mt-10" />
 
       {/* Hero Component ki headings */}
 
