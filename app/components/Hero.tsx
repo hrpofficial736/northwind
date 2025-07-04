@@ -1,36 +1,46 @@
+"use client";
+
 import Logo from "@/components/Logo";
 import { manropeFont } from "@/utils/fonts";
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
+import RareLiving from "./RareLiving";
 
 const Hero = () => {
+
+ 
+
   return (
-    <div className="w-full max-h-[160vh] relative overflow-hidden">
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        src="/videos/hero-video.mp4"
-        className="object-fill aspect-square"
-      />
+    <section
+      className="w-full h-[200vh] relative "
+    >
+      <div className="sticky top-0 h-[120vh] w-full z-0">
+        <video
+          className="object-fill brightness-[90%]"
+          muted
+          autoPlay
+          loop
+          playsInline
+          src={"/videos/hero-video.mp4"}
+        />
+      </div>
 
-      <Logo className="absolute z-10 inset-0 left-[50%] mt-10" />
-
-      {/* Hero Component ki headings */}
-
-      <div className="absolute inset-0 z-10 flex flex-col justify-between px-4 custom580:px-10 lg:px-20 2xl:px-28 pt-[250px] pb-40 custom580:pb-20">
-        <div className="">
+      <div className="flex flex-col items-center justify-between inset-0 px-20 py-10 h-[175vh] absolute w-full z-10">
+        <div>
+          <Logo />
+        </div>
+        <div className="self-start">
           <h1
             className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text`}
           >
             there&apos;s no place like
           </h1>
-          <h1 className="font-boskaItalicMedium text-text text-[60px] custom580:text-[75px] lg:text-[100px] 2xl:text-[128px] ml-20 custom580:ml-40">
+          <h1 className="font-boskaItalicMedium text-text text-[60px] leading-none custom580:text-[75px] lg:text-[100px] 2xl:text-[128px] ml-20 custom580:ml-40">
             home
           </h1>
         </div>
 
-        <div className="text-right ">
+        <div className="text-right self-end"
+        >
           <h1
             className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text max-custom580:text-center mr-[20px] custom580:mr-[50px] lg:mr-[180px]`}
           >
@@ -41,7 +51,9 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-    </div>
+
+      <RareLiving />
+    </section>
   );
 };
 

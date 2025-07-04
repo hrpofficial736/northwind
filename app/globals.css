@@ -30,6 +30,7 @@
 @theme {
   --color-primary: #fff9e3;
   --color-secondary: #161203;
+  --color-border: rgba(181, 175, 150, 1);
   --color-text: #ffffff;
   --font-boska: "Boska";
   --font-boskaMedium: "Boska-Medium";
@@ -39,7 +40,17 @@
 }
 
 
+*::-webkit-scrollbar {
+  display: none
+}
 
+.glass {
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 12px;
+}
 
 @layer utilities {
   .f-c-row {
