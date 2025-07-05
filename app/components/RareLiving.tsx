@@ -76,18 +76,16 @@ const RareLiving = () => {
         </div>
       </div>
 
-      <div className="backdrop-blur-xl brightness-[1.1782] h-[5px] border" />
+      <div className="backdrop-blur-xl brightness-[1.1782] h-[5px]" />
 
-      <div className="backdrop-blur-xl brightness-[1.1790] h-[5px] border" />
+      <div className="backdrop-blur-xl brightness-[1.1790] h-[5px]" />
 
-      <div className="backdrop-blur-xl brightness-[1.1800] h-[5px] border" />
+      <div className="backdrop-blur-xl brightness-[1.1800] h-[5px]" />
 
-      <div className="backdrop-blur-xl brightness-[1.1815] h-[5px] border" />
-
-
+      <div className="backdrop-blur-xl brightness-[1.1815] h-[5px]" />
 
       <div
-        className={`f-c-col gap-[36px] ${manropeFont.className} backdrop-blur-xl brightness-[1.109] border`}
+        className={`f-c-col gap-[36px] ${manropeFont.className} backdrop-blur-xl brightness-[1.109]`}
       >
         <h1 className="text-4xl text-primary">
           Located in the heart of Greater Noida
@@ -99,7 +97,8 @@ const RareLiving = () => {
             <p
               className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
             >
-              pari chowk <br />(landmark)
+              pari chowk <br />
+              (landmark)
             </p>
             <p
               className={`font-boskaMedium text-[28px] lg:text-[36px] font-[400] `}
@@ -113,7 +112,8 @@ const RareLiving = () => {
             <p
               className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
             >
-             gnida <br />(metro station)
+              gnida <br />
+              (metro station)
             </p>
             <p
               className={`font-boskaMedium text-[28px] lg:text-[36px] font-[400] `}
@@ -122,13 +122,13 @@ const RareLiving = () => {
             </p>
           </div>
 
-
           <div className="f-c-col w-[262px] h-[204px]">
             <Aeroplane />
             <p
               className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
             >
-              jewar <br />(airport)
+              jewar <br />
+              (airport)
             </p>
             <p
               className={`font-boskaMedium text-[28px] lg:text-[36px] font-[400] `}
@@ -137,13 +137,13 @@ const RareLiving = () => {
             </p>
           </div>
 
-
           <div className="f-c-col w-[262px] h-[204px]">
             <Location />
             <p
               className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
             >
-              fortis <br />(hospital)
+              fortis <br />
+              (hospital)
             </p>
             <p
               className={`font-boskaMedium text-[28px] lg:text-[36px] font-[400] `}
@@ -151,95 +151,21 @@ const RareLiving = () => {
               7 min
             </p>
           </div>
+        </div>
 
-
-           
-
-
-
+        <div className="f-c-row gap-5 mt-[36px] pb-[88px]">
+          <PrimaryButton
+            text="Download Brochure"
+            className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}
+          />
+          <SecondaryButton
+            text="View Location"
+            className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-white/10 duration-200 text-primary bg-transparent border-primary`}
+          />
         </div>
       </div>
 
-      {/* <span className="flex flex-col gap-10 items-center">
-          <h1
-            className={`${manropeFont.className} font-[400]{`text-[24px] ${manropeFont.className}`}lg:text-[32px]`}
-          >
-            Location Highlights
-          </h1>
-
-          <div className="grid grid-cols-2 grid-rows-2 justify-items-center gap-[24px] lg:gap-10">
-            <div className="f-c-col gap-3 px-4 py-2  min-w-[204px]">
-              <Train />
-              <p
-                className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
-              >
-                pari chowk
-                 metro station
-              </p>
-              <p
-                className={`${manropeFont.className} text-[28px] lg:text-[36px] font-[400] `}
-              >
-                2-4 min
-              </p>
-            </div>
-
-            <div className="f-c-col gap-3 px-4 py-2  min-w-[204px]">
-              <Train />
-              <p
-                className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
-              >
-                gnida
-                 metro station
-              </p>
-              <p
-                className={`${manropeFont.className} text-[28px] lg:text-[36px] font-[400] `}
-              >
-                2-4 min
-              </p>
-            </div>
-
-            <div className="f-c-col gap-3 px-4 py-2  min-w-[204px]">
-              <Aeroplane />
-              <p
-                className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
-              >
-                jewar
-                 airport
-              </p>
-              <p
-                className={`${manropeFont.className} text-[28px] lg:text-[36px] font-[400] `}
-              >
-                2-4 min
-              </p>
-            </div>
-
-            <div className="f-c-col gap-3 px-4 py-2  min-w-[204px]">
-              <Medical />
-              <p
-                className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
-              >
-                fortis
-                 hospital
-              </p>
-              <p
-                className={`${manropeFont.className} text-[28px] lg:text-[36px] font-[400] `}
-              >
-                2-4 min
-              </p>
-            </div>
-          </div>
-        </span> */}
-
-      {/* <div className="flex justify-center max-lg:flex-col gap-5">
-        <SecondaryButton
-          text="Download Brochure"
-          className="p-[12px_32px] lg:p-[20px_40px] text-[16px] lg{`text-[24px] ${manropeFont.className}`}
-        />
-        <PrimaryButton
-          text="View Location"
-          className="p-[12px_32px] lg:p-[20px_40px] text-[16px] lg{`text-[24px] ${manropeFont.className}`}
-        />
-      </div> */}
+      
     </div>
   );
 };

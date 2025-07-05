@@ -2,18 +2,16 @@
 
 import Logo from "@/components/Logo";
 import { manropeFont } from "@/utils/fonts";
-import React, { useEffect, useRef, useState } from "react";
+import React from "react";
 import RareLiving from "./RareLiving";
 
 const Hero = () => {
 
- 
-
   return (
     <section
-      className="w-full h-[200vh] relative "
+      className="w-full h-[200vh] relative"
     >
-      <div className="sticky top-0 h-[120vh] w-full z-0">
+      <div className="sticky top-0 h-[100vh] w-full z-0">
         <video
           className="object-fill brightness-[90%]"
           muted
@@ -24,7 +22,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center justify-between inset-0 px-20 py-10 h-[175vh] absolute w-full z-10">
+      <div className="flex flex-col items-center justify-between inset-0 px-20 py-10 h-[170vh] absolute w-full z-10">
         <div>
           <Logo />
         </div>
