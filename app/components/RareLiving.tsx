@@ -9,22 +9,14 @@ import React from "react";
 
 const RareLiving = () => {
   return (
-    <div className="bg-black/15 absolute top-full w-full p-[30px_30px] lg:p-[0px_0px] lg:py-0 flex flex-col ">
-      <div className="w-full h-[44px] backdrop-blur-[4px] brightness-[1.185]"></div>
-      <div className="w-full h-[44px] backdrop-blur-[6px] brightness-[1.180]"></div>
-
-      <div className="font-boskaMedium px-[40px] selection:bg-primary selection:text-secondary text-primary text-[128px] leading-[130%] xl:text-[180px] backdrop-blur-[8px] brightness-[1.190] ">
+    <div className="z-10 w-full p-[30px_30px] lg:p-[88px_40px] flex flex-col backdrop-blur-xl bg-gradient-to-b from-white/5 via-black/15 to-black/5">
+      <div className="font-boskaMedium selection:bg-primary selection:text-secondary text-primary text-[128px] leading-[130%] xl:text-[180px] ">
         your rare living.
       </div>
 
-      <div className="backdrop-blur-[12px] h-[14px] backdrop-brightness-[1.192]" />
-      <div className="backdrop-blur-[16px] h-[14px] backdrop-brightness-[1.2]" />
-      <div className="backdrop-blur-[20px] h-[14px] backdrop-brightness-[1.208]" />
-      <div className="backdrop-blur-[22px] h-[14px] backdrop-brightness-[1.215]" />
-
-      <div className="flex justify-center gap-60 w-full text-primary max-lg:flex-col mx-auto pb-10 backdrop-blur-xl backdrop-brightness-[1.215]">
+      <div className="flex justify-center gap-60 w-full text-primary max-lg:flex-col mx-auto pb-10 mt-[36px]">
         <p
-          className={`${manropeFont.className} text-[20px] lg:text-[28px] font-[400]`}
+          className={`${manropeFont.className} text-[20px] lg:text-[35px] font-[400]`}
         >
           Located in the heart of
           <br /> Greater Noida, designed
@@ -76,17 +68,7 @@ const RareLiving = () => {
         </div>
       </div>
 
-      <div className="backdrop-blur-xl brightness-[1.1782] h-[5px]" />
-
-      <div className="backdrop-blur-xl brightness-[1.1790] h-[5px]" />
-
-      <div className="backdrop-blur-xl brightness-[1.1800] h-[5px]" />
-
-      <div className="backdrop-blur-xl brightness-[1.1815] h-[5px]" />
-
-      <div
-        className={`f-c-col gap-[36px] ${manropeFont.className} backdrop-blur-xl brightness-[1.109]`}
-      >
+      <div className={`f-c-col gap-[36px] ${manropeFont.className}`}>
         <h1 className="text-4xl text-primary">
           Located in the heart of Greater Noida
         </h1>
@@ -138,7 +120,7 @@ const RareLiving = () => {
           </div>
 
           <div className="f-c-col w-[262px] h-[204px]">
-            <Location />
+            <Medical />
             <p
               className={`${manropeFont.className} font-[400] text-[16px] uppercase text-center`}
             >
@@ -153,7 +135,7 @@ const RareLiving = () => {
           </div>
         </div>
 
-        <div className="f-c-row gap-5 mt-[36px] pb-[88px]">
+        <div className="f-c-row gap-5 mt-[36px]">
           <PrimaryButton
             text="Download Brochure"
             className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}
@@ -164,8 +146,6 @@ const RareLiving = () => {
           />
         </div>
       </div>
-
-      
     </div>
   );
 };

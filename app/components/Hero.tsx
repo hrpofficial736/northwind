@@ -9,9 +9,9 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full h-[200vh] relative"
+      className="w-full h-[200vh] relative bg-gradient-to-b from-transparent to-white/5"
     >
-      <div className="sticky top-0 h-[100vh] w-full z-0">
+      <div className="sticky top-0 h-[130vh] w-full z-0">
         <video
           className="object-fill brightness-[90%]"
           muted
@@ -50,7 +50,7 @@ const Hero = () => {
         </div>
       </div>
 
-      <RareLiving />
+      
     </section>
   );
 };
