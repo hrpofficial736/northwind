@@ -4,6 +4,7 @@ import ConstructionUpdates from "./components/ConstructionUpdates";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import RareLiving from "./components/RareLiving";
+import SustainablyDesigned from "./components/SustainablyDesigned";
 import Testimonial from "./components/Testimonial";
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Testimonial />
       <AboutArchitect />
       <ConstructionUpdates />
+      <SustainablyDesigned />
     </div>
   );
 }

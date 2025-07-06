@@ -7,7 +7,7 @@ import React from "react";
 
 const ConstructionUpdates = () => {
   return (
-    <div className="w-full h-[936px] relative p-[120px_40px] flex flex-col gap-[36px]">
+    <div className="w-full relative p-[120px_40px] flex flex-col gap-[36px]">
       <Image
         src={"/assets/Frame 87.png"}
         fill
@@ -49,7 +49,7 @@ const ConstructionUpdates = () => {
 
 
 
-      <div className="f-c-row gap-5 mt-[36px]">
+      <div className="f-c-row gap-5">
         <PrimaryButton
             text="Sign up for updates"
             className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/80 duration-200 bg-primary text-black`}

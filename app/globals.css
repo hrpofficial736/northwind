@@ -30,6 +30,7 @@
 @theme {
   --color-primary: #fff9e3;
   --color-secondary: #161203;
+  --color-border: #b5af96;
   --color-border: rgba(181, 175, 150, 1);
   --color-text: #ffffff;
   --font-boska: "Boska";
