@@ -5,7 +5,7 @@ import React from "react";
 
 const AboutArchitect = () => {
   return (
-    <div className="w-full h-[806px] relative p-[120px_40px] flex flex-col justify-center">
+    <div className="w-full h-[906px] relative p-[120px_40px] flex flex-col justify-center">
       <Image
         src={"/assets/architect.png"}
         fill

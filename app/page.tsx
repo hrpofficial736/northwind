@@ -1,5 +1,6 @@
 import AboutArchitect from "./components/AboutArchitect";
 import AmaltasTower from "./components/AmaltasTower";
+import ConstructionUpdates from "./components/ConstructionUpdates";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
 import RareLiving from "./components/RareLiving";
@@ -14,6 +15,7 @@ export default function Home() {
       <AmaltasTower />
       <Testimonial />
       <AboutArchitect />
+      <ConstructionUpdates />
     </div>
   );
 }
