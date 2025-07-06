@@ -1,5 +1,6 @@
 import AboutArchitect from "./components/AboutArchitect";
 import AmaltasTower from "./components/AmaltasTower";
+import ConnectWithUs from "./components/ConnectWithUs";
 import ConstructionUpdates from "./components/ConstructionUpdates";
 import Hero from "./components/Hero";
 import NavBar from "./components/NavBar";
@@ -18,6 +19,7 @@ export default function Home() {
       <AboutArchitect />
       <ConstructionUpdates />
       <SustainablyDesigned />
+      <ConnectWithUs />
     </div>
   );
 }

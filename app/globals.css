@@ -31,7 +31,8 @@
   --color-primary: #fff9e3;
   --color-secondary: #161203;
   --color-border: #b5af96;
-  --color-border: rgba(181, 175, 150, 1);
+  --color-input: rgba(246, 236, 199, 0.2);
+  --color-submit: rgba(246, 236, 199, 1);
   --color-text: #ffffff;
   --font-boska: "Boska";
   --font-boskaMedium: "Boska-Medium";
