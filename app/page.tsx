@@ -3,10 +3,11 @@ import AmaltasTower from "./components/AmaltasTower";
 import ConnectWithUs from "./components/ConnectWithUs";
 import ConstructionUpdates from "./components/ConstructionUpdates";
 import Hero from "./components/Hero";
+import MasterfullyPlanned from "./components/MasterfullyPlanned";
 import NavBar from "./components/NavBar";
 import RareLiving from "./components/RareLiving";
 import SustainablyDesigned from "./components/SustainablyDesigned";
-import Testimonial from "./components/Testimonial";
+import WhatTheySayAboutUs from "./components/WhatTheySayAboutUs";
 
 export default function Home() {
   return (
@@ -15,7 +16,8 @@ export default function Home() {
       <Hero />
       <RareLiving />
       <AmaltasTower />
-      <Testimonial />
+      <WhatTheySayAboutUs />
+      <MasterfullyPlanned />
       <AboutArchitect />
       <ConstructionUpdates />
       <SustainablyDesigned />

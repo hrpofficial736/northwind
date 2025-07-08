@@ -3,9 +3,9 @@ import { manropeFont } from '@/utils/fonts';
 import React from 'react';
 
 
-const PrimaryButton = ({ text, className }: { text: string; className?: string }) => {
+const PrimaryButton = ({ text, className, onTap }: { text: string; className?: string, onTap?: () => void; }) => {
   return (
-    <button className={`primary-btn ${manropeFont.className} font-[600] ${className}`}>
+    <button onClick={onTap} className={`primary-btn ${manropeFont.className} font-[600] ${className}`}>
         { text }
     </button>
   )
