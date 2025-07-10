@@ -9,9 +9,9 @@ const Hero = () => {
 
   return (
     <section
-      className="w-full h-[200vh] relative bg-gradient-to-b from-transparent to-white/5"
+      className="w-full lg:h-[200vh] max-lg:bg-secondary relative bg-gradient-to-b from-transparent to-white/5"
     >
-      <div className="sticky top-0 h-[130vh] w-full z-0">
+      <div className="sticky top-0 h-[100vh] lg:h-[130vh] w-full z-0">
         <video
           className="object-fill brightness-[90%]"
           muted
@@ -22,7 +22,7 @@ const Hero = () => {
         />
       </div>
 
-      <div className="flex flex-col items-center justify-between inset-0 px-20 py-10 h-[170vh] absolute w-full z-10">
+      <div className="flex flex-col items-center justify-between inset-0 pl-10 pr-0 lg:px-20 py-10 h-[90vh] lg:h-[170vh] absolute w-full z-10">
         <div>
           <Logo />
         </div>
@@ -40,7 +40,7 @@ const Hero = () => {
         <div className="text-right self-end"
         >
           <h1
-            className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text max-custom580:text-center mr-[20px] custom580:mr-[50px] lg:mr-[180px]`}
+            className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text mr-[50px] custom580:mr-[50px] lg:mr-[180px]`}
           >
             and there&apos;s no home like
           </h1>
@@ -49,8 +49,8 @@ const Hero = () => {
           </h1>
         </div>
       </div>
+      <RareLiving className="lg:hidden" />
 
-      
     </section>
   );
 };

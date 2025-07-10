@@ -48,13 +48,13 @@ const MasterfullyPlanned = () => {
   const [clicked, setClicked] = useState<boolean>(false);
 
   return (
-    <div className="w-full h-[1194px] bg-primary relative p-[120px_36px] gap-[44px] flex flex-col">
-      <h1 className={"font-boskaMedium text-[96px] text-secondary"}>
+    <div className="w-full lg:h-[1194px] bg-primary relative p-[120px_36px] gap-[44px] flex flex-col">
+      <h1 className={"font-boskaMedium text-[64px] lg:text-[96px] text-secondary"}>
         masterfully planned
       </h1>
 
       {/* Map Section */}
-      <div className="outline-2 outline-border rounded-[20px] h-[678px] flex items-start w-[70%] self-center">
+      <div className="outline-2 outline-border rounded-[20px] lg:h-[678px] flex flex-col-reverse lg:flex-row items-start lg:w-[70%] self-center">
         {/* Names */}
         <div className="flex flex-col items-start w-[40%]">
           {sections.map((section, index) => {
@@ -73,7 +73,7 @@ const MasterfullyPlanned = () => {
         </div>
 
         {/* Maps */}
-        <div className="relative h-full w-full">
+        <div className="relative lg:h-full w-full">
           <Image
             alt={sections[current].name}
             src={sections[current].map}
@@ -85,17 +85,25 @@ const MasterfullyPlanned = () => {
 
 
 
-      <div className="f-c-row gap-5 mt-[36px]">
+      <div className="f-c-col lg:flex-row gap-5 mt-[28px] lg:mt-[32px] w-full">
         <PrimaryButton
-            text="Express Interest"
-            onTap={() => setClicked(!clicked)}
-            className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} ${clicked ? "bg-primary text-secondary" : "bg-secondary text-primary"}`}
-          />
-          <SecondaryButton
+          text="Express Interest"
           onTap={() => setClicked(!clicked)}
-            text="View Master Plan"
-            className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} ${clicked ? "bg-secondary text-primary" : "bg-primary text-secondary"} border-secondary`}
-          />
+          className={`p-[20px_40px] w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+            manropeFont.className
+          } ${
+            clicked ? "bg-primary text-secondary" : "bg-secondary text-primary"
+          }`}
+        />
+        <SecondaryButton
+          onTap={() => setClicked(!clicked)}
+          text="View Floor Plan"
+          className={`p-[20px_40px] w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+            manropeFont.className
+          } ${
+            clicked ? "bg-secondary text-primary" : "bg-primary text-secondary"
+          } border-secondary`}
+        />
       </div>
     </div>
   );

@@ -10,20 +10,20 @@ import React from "react";
 
 const SustainablyDesigned = () => {
   return (
-    <div className="w-full h-[1100px] bg-secondary relative p-[120px_40px] flex flex-col gap-[36px]">
+    <div className="w-full h-[1100px] bg-secondary relative p-[88px_24px] lg:p-[120px_40px] flex flex-col gap-[36px]">
       <div className="flex flex-col justify-center">
-        <h1 className="font-boskaMedium text-primary text-[96px] z-20 leading-none">
+        <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none">
           sustainably designed.
         </h1>
         <p
-          className={`${manropeFont.className} text-[32px] text-primary mt-[12px]`}
+          className={`${manropeFont.className} text-[24px] lg:text-[32px] text-primary mt-[12px]`}
         >
           IGBC platinum pre-certified.
         </p>
       </div>
 
 
-      <div className="grid grid-cols-6 grid-rows-2 gap-[36px] py-[24px] max-w-[858px] mx-auto justify-items-center place-items-center">
+      <div className="grid lg:grid-cols-6 lg:grid-rows-2 gap-[36px] py-[24px] lg:max-w-[858px] mx-auto justify-items-center place-items-center">
         <div className="py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary col-span-2 w-[260px]">
             <SolarPower />
             <p className={`${manropeFont.className} uppercase text-center`}>solar power<br />lightning</p>

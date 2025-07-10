@@ -7,26 +7,26 @@ import Train from "@/components/icons/Train";
 import { manropeFont } from "@/utils/fonts";
 import React from "react";
 
-const RareLiving = () => {
+const RareLiving = ({ className }: { className: string }) => {
   return (
-    <div className="z-10 w-full p-[30px_30px] lg:p-[88px_40px] flex flex-col backdrop-blur-xl bg-gradient-to-b from-white/5 via-black/15 to-black/5">
-      <div className="font-boskaMedium selection:bg-primary selection:text-secondary text-primary text-[128px] leading-[130%] xl:text-[180px] ">
+    <div className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg bg-gradient-to-b from-white/5 via-black/15 to-black/5 ${className}`}>
+      <div className="font-boskaMedium selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
         your rare living.
       </div>
 
-      <div className="flex justify-center gap-60 w-full text-primary max-lg:flex-col mx-auto pb-10 mt-[36px]">
+      <div className="flex justify-center lg:gap-60 w-full text-primary max-lg:flex-col mx-auto pb-10 mt-[36px]">
         <p
-          className={`${manropeFont.className} text-[20px] lg:text-[35px] font-[400]`}
+          className={`${manropeFont.className} text-[22px] lg:text-[35px] font-[400]`}
         >
           Located in the heart of
-          <br /> Greater Noida, designed
-          <br /> for serenity, privacy, and
-          <br /> open perspectives.
+          <br className="max-lg:hidden" />Greater Noida, designed
+          <br className="max-lg:hidden" />for serenity, privacy, and
+          <br className="max-lg:hidden" />open perspectives.
         </p>
 
-        <div className="grid grid-rows-2 grid-cols-2 gap-[35px] w-1/2 justify-items-center">
+        <div className="max-lg:flex max-lg:flex-col lg:grid lg:grid-rows-2 lg:grid-cols-2 gap-[35px] lg:w-[60%] max-lg:justify-items-center max-lg:mt-[48px]">
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-20 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
           >
             4.5 acres
             <p className={`text-[24px] ${manropeFont.className}`}>
@@ -36,7 +36,7 @@ const RareLiving = () => {
             </p>
           </div>
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-20 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
           >
             185
             <p className={`text-[24px] ${manropeFont.className}`}>
@@ -46,7 +46,7 @@ const RareLiving = () => {
             </p>
           </div>
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-20 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
           >
             70%
             <p className={`text-[24px] ${manropeFont.className}`}>
@@ -56,7 +56,7 @@ const RareLiving = () => {
             </p>
           </div>
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-20 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
           >
             IGBC
             <p className={`text-[24px] ${manropeFont.className}`}>
@@ -69,11 +69,11 @@ const RareLiving = () => {
       </div>
 
       <div className={`f-c-col gap-[36px] ${manropeFont.className}`}>
-        <h1 className="text-4xl text-primary">
+        <h1 className="max-lg:text-[25px] text-4xl text-primary text-center">
           Located in the heart of Greater Noida
         </h1>
 
-        <div className="f-c-row gap-[24px] text-primary">
+        <div className="max-lg:grid grid-cols-2 justify-items-center lg:flex lg:justify-center lg:items-center gap-[24px] text-primary">
           <div className="f-c-col w-[262px] h-[204px]">
             <Location />
             <p
@@ -135,14 +135,14 @@ const RareLiving = () => {
           </div>
         </div>
 
-        <div className="f-c-row gap-5 mt-[36px]">
+        <div className="flex-col flex lg:flex-row gap-5 mt-[36px] max-lg:w-full">
           <PrimaryButton
             text="Download Brochure"
-            className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}
+            className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}
           />
           <SecondaryButton
             text="View Location"
-            className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-white/10 duration-200 text-primary bg-transparent border-primary`}
+            className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-white/10 duration-200 text-primary bg-transparent border-primary`}
           />
         </div>
       </div>

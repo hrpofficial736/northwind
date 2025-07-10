@@ -11,10 +11,10 @@ import WhatTheySayAboutUs from "./components/WhatTheySayAboutUs";
 
 export default function Home() {
   return (
-    <div className="w-screen h-screen overflow-x-hidden">
+    <div className="w-screen h-screen overflow-x-hidden relative">
       <NavBar />
       <Hero />
-      <RareLiving />
+      <RareLiving className="max-lg:hidden" />
       <AmaltasTower />
       <WhatTheySayAboutUs />
       <MasterfullyPlanned />

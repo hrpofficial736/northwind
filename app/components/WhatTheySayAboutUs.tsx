@@ -10,18 +10,18 @@ import Image from "next/image";
 const WhatTheySayAboutUs = () => {
   const [click, setClick] = useState<number>(1);
   return (
-    <div className="w-full h-[948px] bg-primary relative p-[120px_40px] gap-[44px] f-c-row">
-      <div className="w-[30%]">
-        <h1 className={"font-boskaMedium text-[96px] text-secondary"}>
+    <div className="w-full h-[948px] bg-primary relative p-[64px_24px] lg:p-[120px_40px] gap-[44px] flex flex-col lg:flex-row">
+      <div className="lg:w-[30%]">
+        <h1 className={"font-boskaMedium text-[64px] lg:text-[96px] text-secondary"}>
           what they say about us
         </h1>
-        <p className={`${manropeFont.className} text-[32px]`}>
+        <p className={`${manropeFont.className} text-[24px] lg:text-[32px]`}>
           Customer Testimonials
         </p>
       </div>
 
       {/* Images */}
-      <div className="flex flex-row gap-5 w-[70%] h-full">
+      <div className="flex flex-row gap-5 lg:w-[70%] h-full">
         <div
           onClick={() => setClick(1)}
           className={`rounded-[16px] ${
