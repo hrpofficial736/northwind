@@ -10,7 +10,7 @@ import React from "react";
 
 const SustainablyDesigned = () => {
   return (
-    <div className="w-full h-[1100px] bg-secondary relative p-[88px_24px] lg:p-[120px_40px] flex flex-col gap-[36px]">
+    <div className="w-full lg:h-[1100px] bg-secondary relative p-[88px_24px] lg:p-[120px_40px] flex flex-col gap-[36px]">
       <div className="flex flex-col justify-center">
         <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none">
           sustainably designed.
@@ -23,46 +23,52 @@ const SustainablyDesigned = () => {
       </div>
 
 
-      <div className="grid lg:grid-cols-6 lg:grid-rows-2 gap-[36px] py-[24px] lg:max-w-[858px] mx-auto justify-items-center place-items-center">
-        <div className="py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary col-span-2 w-[260px]">
+      <div className="grid grid-cols-2 grid-rows-6 md:grid-cols-6 md:grid-rows-2 gap-[56px] md:gap-[36px] py-[24px] md:max-w-[858px] mx-auto justify-items-center place-items-center">
+        <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2">
             <SolarPower />
             <p className={`${manropeFont.className} uppercase text-center`}>solar power<br />lightning</p>
         </div>
 
-         <div className="py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary col-span-2 w-[260px]">
+         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2 max-md:col-start-1 col-span-1">
             <Vent />
             <p className={`${manropeFont.className} uppercase text-center`}>low-voc<br />paints</p>
         </div>
 
 
-         <div className="py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary col-span-2 w-[260px]">
+         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2 max-md:col-start-1">
             <Cloud />
             <p className={`${manropeFont.className} uppercase text-center`}>rainwater<br />harvesting</p>
         </div>
 
 
-         <div className="py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary col-span-2 w-[260px] col-start-2">
+         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2 max-md:row-start-2 max-md:col-span-1 max-md:col-start-2 md:col-start-2">
             <Recycle />
             <p className={`${manropeFont.className} uppercase text-center`}>efficient waste<br />management</p>
         </div>
 
 
-         <div className="py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary col-span-2 w-[260px] col-start-4">
+         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2 max-md:row-start-4 max-md:col-start-2 md:col-start-4">
             <Bulb />
             <p className={`${manropeFont.className} uppercase text-center`}>energy optimized<br />layouts</p>
         </div>
       </div>
 
-      <div className="f-c-row gap-5 mt-[36px]">
+      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[28px] lg:mt-[32px] w-full">
         <PrimaryButton
-            text="View Certification"
-            className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/80 duration-200 bg-primary text-black`}
-          />
-          <SecondaryButton
-            text="Green Guidelines PDF"
-            className={`p-[12px_32px] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-white/10 duration-200 text-primary bg-transparent border-primary`}
-          />
-      </div>
+          text="View Certification"
+          className={`p-[20px_40px] max-md:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+            manropeFont.className
+          } bg-primary text-secondary
+          `}
+        />
+        <SecondaryButton
+          text="Green Guidelines PDF"
+          className={`p-[20px_40px] max-md:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+            manropeFont.className
+          } text-primary bg-transparent border
+           border-primary`}
+        />
+        </div>
 
 
 

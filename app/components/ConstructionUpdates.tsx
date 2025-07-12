@@ -54,10 +54,10 @@ const ConstructionUpdates = () => {
 
 
 
-      <div className="f-c-col lg:flex-row gap-5 mt-[28px] lg:mt-[32px] w-full">
+      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[28px] lg:mt-[32px] w-full">
         <PrimaryButton
           text="Sign up for updates"
-          className={`p-[20px_40px] w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
           } bg-primary text-secondary
           `}
@@ -65,7 +65,7 @@ const ConstructionUpdates = () => {
         <SecondaryButton
           text="View Floor Plan"
           icon={<VideoCircle />}
-          className={`p-[20px_40px] w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
           } text-primary bg-transparent border
            border-primary`}

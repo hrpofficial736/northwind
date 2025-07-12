@@ -4,15 +4,15 @@ import Form from "./Form";
 
 const ConnectWithUs = () => {
   return (
-    <div className="w-full h-[709px] bg-secondary relative p-[120px_40px] f-c-row gap-[36px] f-c-row justify-center">
-      <div className="flex flex-col justify-center w-[40%] text-center">
-        <h1 className="font-boskaMedium text-primary text-[96px] z-20 leading-none">
+    <div className="w-full lg:h-[709px] bg-secondary relative p-[64px_24px] lg:p-[120px_40px] flex flex-col lg:flex-row gap-[36px]">
+      <div className="flex flex-col lg:justify-center lg:w-[40%] lg:text-center">
+        <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none">
           connect<br /> with us
         </h1>
         <p
-          className={`${manropeFont.className} text-[32px] text-primary mt-[12px]`}
+          className={`${manropeFont.className} text-[24px] lg:text-[32px] text-primary mt-[12px]`}
         >
-          Let's Talk About Your<br /> Rare Living Address
+          Let's Talk About Your<br className="max-lg:hidden" /> Rare Living Address
         </p>
       </div>
 

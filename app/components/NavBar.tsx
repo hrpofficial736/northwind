@@ -2,10 +2,10 @@
 
 import PrimaryButton from '@/components/buttons/PrimaryButton';
 import HamBurger from '@/components/icons/HamBurger';
-import React, { useState } from 'react';
+import React, { RefObject, useState } from 'react';
 import Navigation from './Navigation';
 
-const NavBar = () => {
+const NavBar = ({ ref }: { ref: RefObject<HTMLDivElement | null>}) => {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
   return (
     <div>
@@ -16,7 +16,7 @@ const NavBar = () => {
       <PrimaryButton text="Enquire Now" className="p-[12px_36px]" />
     </div>
 
-    <Navigation show={showNavigation} setShow={setShowNavigation} />
+    <Navigation ref={ref} show={showNavigation} setShow={setShowNavigation} />
     </div>
   )
 }

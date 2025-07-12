@@ -48,15 +48,15 @@ const MasterfullyPlanned = () => {
   const [clicked, setClicked] = useState<boolean>(false);
 
   return (
-    <div className="w-full lg:h-[1194px] bg-primary relative p-[120px_36px] gap-[44px] flex flex-col">
+    <div className="w-full lg:h-[1194px] bg-primary relative p-[64px_16px] lg:p-[120px_36px] gap-[44px] flex flex-col">
       <h1 className={"font-boskaMedium text-[64px] lg:text-[96px] text-secondary"}>
         masterfully planned
       </h1>
 
       {/* Map Section */}
-      <div className="outline-2 outline-border rounded-[20px] lg:h-[678px] flex flex-col-reverse lg:flex-row items-start lg:w-[70%] self-center">
+      <div className="outline-2 outline-border rounded-[20px] h-max lg:h-[678px] flex flex-col lg:flex-row items-start w-[70%] self-center">
         {/* Names */}
-        <div className="flex flex-col items-start w-[40%]">
+        <div className="flex flex-wrap lg:flex-col lg:items-start lg:w-[40%]">
           {sections.map((section, index) => {
             return (
               <div
@@ -64,7 +64,7 @@ const MasterfullyPlanned = () => {
                 onClick={() => {
                     setCurrent(index)
                 }}
-                className={`p-[12px_30px] ${index === 0 && "rounded-tl-[20px]"} bg-transparent hover:bg-secondary/85 hover:text-primary cursor-pointer transition-all duration-200 w-full flex justify-start divide-border border-b-2 border-border ${manropeFont.className} font-[500] text-[24px] text-secondary`}
+                className={`p-[8px_12px] lg:p-[12px_30px] ${index === 0 && "rounded-tl-[20px]"} ${index === 1 && "max-lg:rounded-tr-[20px]"} bg-transparent hover:bg-secondary/85 hover:text-primary cursor-pointer transition-all duration-200 lg:w-full flex justify-start border-b-1 border-r-1 max-lg:w-1/2 border-border ${manropeFont.className} font-[500] text-[14px] lg:text-[24px] text-secondary `}
               >
                 {section.name}
               </div>
@@ -73,23 +73,23 @@ const MasterfullyPlanned = () => {
         </div>
 
         {/* Maps */}
-        <div className="relative lg:h-full w-full">
+        <div className="relative h-[300px] sm:max-lg:h-[600px] lg:h-full w-full">
           <Image
             alt={sections[current].name}
             src={sections[current].map}
             fill
-            className="object-cover rounded-tr-[20px] rounded-br-[20px]"
+            className="object-cover lg:rounded-tr-[20px] lg:rounded-br-[20px] max-lg:rounded-b-[20px]"
           />
         </div>
       </div>
 
 
 
-      <div className="f-c-col lg:flex-row gap-5 mt-[28px] lg:mt-[32px] w-full">
+      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 max-lg:mt-[28px] lg:mt-[32px] w-full">
         <PrimaryButton
           text="Express Interest"
           onTap={() => setClicked(!clicked)}
-          className={`p-[20px_40px] w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
           } ${
             clicked ? "bg-primary text-secondary" : "bg-secondary text-primary"
@@ -98,7 +98,7 @@ const MasterfullyPlanned = () => {
         <SecondaryButton
           onTap={() => setClicked(!clicked)}
           text="View Floor Plan"
-          className={`p-[20px_40px] w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
           } ${
             clicked ? "bg-secondary text-primary" : "bg-primary text-secondary"
