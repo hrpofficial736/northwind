@@ -22,7 +22,7 @@ export default function Home() {
       <RareLiving className="max-lg:hidden" />
       <AmaltasTower />
       <MasterfullyPlanned />
-      <WhatTheySayAboutUs />
+      
       <AboutArchitect />
       <ConstructionUpdates />
       <SustainablyDesigned />

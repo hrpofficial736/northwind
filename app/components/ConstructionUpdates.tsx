@@ -63,7 +63,7 @@ const ConstructionUpdates = () => {
           `}
         />
         <SecondaryButton
-          text="View Floor Plan"
+          text="Watch site video"
           icon={<VideoCircle />}
           className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
