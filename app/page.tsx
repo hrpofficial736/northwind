@@ -11,6 +11,7 @@ import NavBar from "./components/NavBar";
 import RareLiving from "./components/RareLiving";
 import SustainablyDesigned from "./components/SustainablyDesigned";
 import WhatTheySayAboutUs from "./components/WhatTheySayAboutUs";
+import Footer from "./components/Footer";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -26,6 +27,7 @@ export default function Home() {
       <ConstructionUpdates />
       <SustainablyDesigned />
       <ConnectWithUs />
+      <Footer />
     </div>
   );
 }

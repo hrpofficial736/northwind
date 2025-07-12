@@ -56,6 +56,9 @@ const SustainablyDesigned = () => {
       <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[28px] lg:mt-[32px] w-full">
         <PrimaryButton
           text="View Certification"
+          onTap={() => {
+            window.open("/assets/certificates/IGBC CERTIFICATE.pdf", "blank")
+          }}
           className={`p-[20px_40px] max-md:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
           } bg-primary text-secondary
@@ -63,6 +66,9 @@ const SustainablyDesigned = () => {
         />
         <SecondaryButton
           text="Green Guidelines PDF"
+          onTap={() => {
+            window.open("/assets/certificates/IGBC GUIDELINES.pdf", "blank")
+          }}
           className={`p-[20px_40px] max-md:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
           } text-primary bg-transparent border

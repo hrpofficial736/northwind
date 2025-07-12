@@ -9,7 +9,7 @@ import React from "react";
 
 const RareLiving = ({ className }: { className: string }) => {
   return (
-    <div className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg bg-gradient-to-b from-white/5 via-black/15 to-black/5 ${className}`}>
+    <div className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg bg-gradient-to-b from-black/5 via-black/20 to-black/5 ${className}`}>
       <div className="font-boskaMedium selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
         your rare living.
       </div>
