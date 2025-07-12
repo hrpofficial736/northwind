@@ -135,7 +135,7 @@ const RareLiving = ({ className }: { className: string }) => {
           </div>
         </div>
 
-        <div className="flex-col flex lg:flex-row gap-5 mt-[36px] max-lg:w-full">
+        <div className="flex-col flex md:flex-row md:justify-center gap-5 mt-[36px] max-lg:w-full">
           <PrimaryButton
             text="Download Brochure"
             className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}

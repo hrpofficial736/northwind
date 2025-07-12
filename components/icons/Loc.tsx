@@ -1,7 +1,7 @@
-import React from 'react'
+import React from "react";
 
-const Loc=()=>{
-    return(
+const Loc = () => {
+  return (
     <svg
       width="24"
       height="25"
@@ -27,8 +27,7 @@ const Loc=()=>{
         />
       </g>
     </svg>
-
-    );
+  );
 };
 
 export default Loc;

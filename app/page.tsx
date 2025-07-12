@@ -1,3 +1,6 @@
+"use client";
+
+import { useRef } from "react";
 import AboutArchitect from "./components/AboutArchitect";
 import AmaltasTower from "./components/AmaltasTower";
 import ConnectWithUs from "./components/ConnectWithUs";
@@ -10,14 +13,15 @@ import SustainablyDesigned from "./components/SustainablyDesigned";
 import WhatTheySayAboutUs from "./components/WhatTheySayAboutUs";
 
 export default function Home() {
+  const ref = useRef<HTMLDivElement | null>(null);
   return (
-    <div className="w-screen h-screen overflow-x-hidden relative">
-      <NavBar />
+    <div ref={ref} className="w-screen h-screen overflow-x-hidden relative">
+      <NavBar ref={ref} />
       <Hero />
       <RareLiving className="max-lg:hidden" />
       <AmaltasTower />
-      <WhatTheySayAboutUs />
       <MasterfullyPlanned />
+      <WhatTheySayAboutUs />
       <AboutArchitect />
       <ConstructionUpdates />
       <SustainablyDesigned />

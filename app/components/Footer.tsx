@@ -1,6 +1,5 @@
 import React from "react";
 import { manropeFont } from "@/utils/fonts";    
-import Foot from "@/components/icons/Foot";
 import Sign from "@/components/Sign";
 import Loc from "@/components/icons/Loc";
 import Mail from "@/components/icons/Mail1";
@@ -75,9 +74,9 @@ const Footer = () => {
             </div>
             
         
-        <div className="hidden">
+        {/* <div className="hidden">
             <Foot />
-        </div>
+        </div> */}
       
       </footer>
     );
