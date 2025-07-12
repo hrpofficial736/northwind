@@ -30,6 +30,7 @@
 @theme {
   --color-primary: #fff9e3;
   --color-secondary: #161203;
+  --color-tertiary: #000;
   --color-border: #b5af96;
   --color-input: rgba(246, 236, 199, 0.2);
   --color-submit: rgba(246, 236, 199, 1);

@@ -1,6 +1,6 @@
 "use client";
 
-import { AnimatePresence, motion } from "motion/react";
+import { AnimatePresence, motion } from "framer-motion";
 import Cross from "@/components/icons/Cross";
 import React, { RefObject, useEffect, useState } from "react";
 
