@@ -12,6 +12,7 @@ import RareLiving from "./components/RareLiving";
 import SustainablyDesigned from "./components/SustainablyDesigned";
 import WhatTheySayAboutUs from "./components/WhatTheySayAboutUs";
 import Footer from "./components/Footer";
+import ImageGallery from "./components/ImageGallery";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -21,8 +22,8 @@ export default function Home() {
       <Hero />
       <RareLiving className="max-lg:hidden" />
       <AmaltasTower />
+      <ImageGallery />
       <MasterfullyPlanned />
-      <WhatTheySayAboutUs />
       <AboutArchitect />
       <ConstructionUpdates />
       <SustainablyDesigned />
