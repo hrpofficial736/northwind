@@ -4,6 +4,7 @@ import Bulb from "@/components/icons/Bulb";
 import Cloud from "@/components/icons/Cloud";
 import Recycle from "@/components/icons/Recycle";
 import SolarPower from "@/components/icons/SolarPower";
+import Tree from "@/components/icons/Tree";
 import Vent from "@/components/icons/Vent";
 import { manropeFont } from "@/utils/fonts";
 import React from "react";
@@ -23,33 +24,38 @@ const SustainablyDesigned = () => {
       </div>
 
 
-      <div className="grid grid-cols-2 grid-rows-6 md:grid-cols-6 md:grid-rows-2 gap-[56px] md:gap-[36px] py-[24px] md:max-w-[858px] mx-auto justify-items-center place-items-center">
-        <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2">
+      <div className="grid grid-cols-2 grid-rows-6 md:grid-cols-6 md:grid-rows-2 gap-[20px] md:gap-[36px] py-[24px] md:max-w-[858px] mx-auto justify-items-center place-items-center">
+        <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[150px] custom580:w-[184px] md:w-[200px] lg:w-[260px] max-md:row-span-2">
             <SolarPower />
-            <p className={`${manropeFont.className} uppercase text-center`}>solar power<br />lightning</p>
+            <p className={`${manropeFont.className} uppercase text-center max-sm:text-[12px]`}>solar power<br />lightning</p>
         </div>
 
-         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2 max-md:col-start-1 col-span-1">
+         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[150px] custom580:w-[184px] md:w-[200px] lg:w-[260px] max-md:row-span-2 col-span-1">
             <Vent />
-            <p className={`${manropeFont.className} uppercase text-center`}>low-voc<br />paints</p>
+            <p className={`${manropeFont.className} uppercase text-center max-sm:text-[12px]`}>low-voc<br />paints</p>
         </div>
 
 
-         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2 max-md:col-start-1">
+         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[150px] custom580:w-[184px] md:w-[200px] lg:w-[260px] max-md:row-span-2">
             <Cloud />
-            <p className={`${manropeFont.className} uppercase text-center`}>rainwater<br />harvesting</p>
+            <p className={`${manropeFont.className} uppercase text-center max-sm:text-[12px]`}>rainwater<br />harvesting</p>
         </div>
 
 
-         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2 max-md:row-start-2 max-md:col-span-1 max-md:col-start-2 md:col-start-2">
+         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[150px] custom580:w-[184px] md:w-[200px] lg:w-[260px] max-md:row-span-2 max-md:col-span-1">
             <Recycle />
-            <p className={`${manropeFont.className} uppercase text-center`}>efficient waste<br />management</p>
+            <p className={`${manropeFont.className} uppercase text-center max-sm:text-[12px]`}>efficient waste<br />management</p>
         </div>
 
 
-         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[144px] md:w-[260px] max-md:row-span-2 max-md:row-start-4 max-md:col-start-2 md:col-start-4">
+         <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[150px] custom580:w-[184px] md:w-[200px] lg:w-[260px] max-md:row-span-2">
             <Bulb />
-            <p className={`${manropeFont.className} uppercase text-center`}>energy optimized<br />layouts</p>
+            <p className={`${manropeFont.className} uppercase text-center max-sm:text-[12px]`}>energy optimized<br /> layouts</p>
+        </div>
+
+        <div className="py-[20px] lg:py-[36px] f-c-col gap-[12px] outline-2 outline-border rounded-[8px] text-primary md:col-span-2 w-[150px] custom580:w-[184px] md:w-[200px] lg:w-[260px] max-md:row-span-2">
+            <Tree />
+            <p className={`${manropeFont.className} uppercase text-center max-sm:text-[12px]`}>abundant<br />greenery</p>
         </div>
       </div>
 

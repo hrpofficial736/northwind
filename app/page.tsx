@@ -25,10 +25,10 @@ export default function Home() {
       <ImageGallery />
       <MasterfullyPlanned />
 
-      <AboutArchitect />
       <ConstructionUpdates />
       <SustainablyDesigned />
       <ConnectWithUs />
+      <AboutArchitect />
       <Footer />
     </div>
   );
