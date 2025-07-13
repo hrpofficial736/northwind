@@ -18,9 +18,9 @@ const RareLiving = ({ className }: { className: string }) => {
         <p
           className={`${manropeFont.className} text-[22px] lg:text-[35px] font-[400]`}
         >
-          Located in the heart of
-          <br className="max-lg:hidden" />Greater Noida, designed
-          <br className="max-lg:hidden" />for serenity, privacy, and
+          
+          Designed for serenity, privacy, and
+          
           <br className="max-lg:hidden" />open perspectives.
         </p>
 
@@ -138,10 +138,15 @@ const RareLiving = ({ className }: { className: string }) => {
         <div className="flex-col flex sm:flex-row justify-center items-center gap-5 mt-[36px] w-full">
           <PrimaryButton
             text="Download Brochure"
+            onTap={() => {
+              window.open("/assets/certificates/Brochure.pdf", "blank");
+            }}
             className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}
           />
           <SecondaryButton
             text="View Location"
+           
+           
             className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-white/10 duration-200 text-primary bg-transparent border-primary`}
           />
         </div>

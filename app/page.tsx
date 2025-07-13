@@ -24,6 +24,7 @@ export default function Home() {
       <AmaltasTower />
       <ImageGallery />
       <MasterfullyPlanned />
+
       <AboutArchitect />
       <ConstructionUpdates />
       <SustainablyDesigned />
