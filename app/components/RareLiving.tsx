@@ -24,7 +24,7 @@ const RareLiving = ({ className }: { className: string }) => {
           <br className="max-lg:hidden" />open perspectives.
         </p>
 
-        <div className="max-lg:flex max-lg:flex-col lg:grid lg:grid-rows-2 lg:grid-cols-2 gap-[35px] lg:w-[60%] max-lg:justify-items-center max-lg:mt-[48px]">
+        <div className="max-sm:flex max-sm:flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-[35px] lg:w-[60%] max-sm:justify-items-center mt-[32px] max-sm:mt-[48px]">
           <div
             className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
           >
@@ -135,7 +135,7 @@ const RareLiving = ({ className }: { className: string }) => {
           </div>
         </div>
 
-        <div className="flex-col flex md:flex-row md:justify-center gap-5 mt-[36px] max-lg:w-full">
+        <div className="flex-col flex sm:flex-row justify-center items-center gap-5 mt-[36px] w-full">
           <PrimaryButton
             text="Download Brochure"
             onTap={() => {

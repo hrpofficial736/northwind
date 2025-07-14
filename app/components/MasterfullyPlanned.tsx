@@ -54,7 +54,7 @@ const MasterfullyPlanned = () => {
       </h1>
 
       {/* Map Section */}
-      <div className="outline-2 outline-border rounded-[20px] h-max lg:h-[678px] flex flex-col lg:flex-row items-start w-[70%] self-center">
+      <div className="outline-2 outline-border rounded-[20px] h-max lg:h-[678px] flex flex-col lg:flex-row items-start w-[90%] xl:w-[70%] self-center">
         {/* Names */}
         <div className="flex flex-wrap lg:flex-col lg:items-start lg:w-[40%]">
           {sections.map((section, index) => {
@@ -73,7 +73,7 @@ const MasterfullyPlanned = () => {
         </div>
 
         {/* Maps */}
-        <div className="relative h-[300px] sm:max-lg:h-[600px] lg:h-full w-full">
+        <div className="relative h-[300px] sm:max-lg:h-[600px] lg:h-full w-full border">
           <Image
             alt={sections[current].name}
             src={sections[current].map}

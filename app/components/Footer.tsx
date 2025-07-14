@@ -8,7 +8,7 @@ import Globe from "@/components/icons/Globe";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col bg-tertiary relative max-md:p-[20px_0px] max-md:h-[910px] md:p-[120px_0px] gap-[80px] overflow-hidden bg-gradient-to-r from-black to-secondary">
+    <footer className="w-full flex flex-col bg-tertiary relative max-md:p-[20px_0px] max-md:h-[1000px] md:p-[120px_0px] gap-[80px] overflow-hidden bg-gradient-to-r from-black to-secondary">
       <div className=" h-[134px] flex flex-col justify-center items-center z-20">
         <Sign />
       </div>

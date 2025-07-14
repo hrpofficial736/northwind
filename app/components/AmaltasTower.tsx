@@ -16,7 +16,7 @@ const AmaltasTower = () => {
         <p className="text-[28px] lg:text-[36px] text-secondary/30">4.5BHK</p>
       </div>
       <h1 className="font-boskaMedium text-[56px] lg:text-[128px] mt-[28px] lg:mt-[32px]">
-        amaltas tower
+        banyan tower
       </h1>
 
       {/* Fixed Image Grid */}
