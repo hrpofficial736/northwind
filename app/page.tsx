@@ -8,9 +8,7 @@ import ConstructionUpdates from "./components/ConstructionUpdates";
 import Hero from "./components/Hero";
 import MasterfullyPlanned from "./components/MasterfullyPlanned";
 import NavBar from "./components/NavBar";
-import RareLiving from "./components/RareLiving";
 import SustainablyDesigned from "./components/SustainablyDesigned";
-import WhatTheySayAboutUs from "./components/WhatTheySayAboutUs";
 import Footer from "./components/Footer";
 import ImageGallery from "./components/ImageGallery";
 
@@ -20,7 +18,6 @@ export default function Home() {
     <div ref={ref} className="w-screen h-screen overflow-x-hidden relative">
       <NavBar ref={ref} />
       <Hero />
-      <RareLiving className="max-lg:hidden" />
       <AmaltasTower />
       <ImageGallery />
       <MasterfullyPlanned />

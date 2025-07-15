@@ -7,15 +7,15 @@ import RareLiving from "./RareLiving";
 
 const Hero = () => {
   return (
-    <section className="w-full lg:h-[200vh] max-lg:bg-secondary relative bg-gradient-to-b from-transparent to-white/5">
-      <div className="sticky top-0 max-lg:h-[100vh] lg:h-[30vh] xl:h-[60vh] 2xl:h-0 w-full z-0">
+    <section className="w-full lg:h-[350vh] bg-secondary relative">
+      <div className="sticky top-0 max-lg:h-[100vh] lg:h-[30vh] xl:h-[60vh] 2xl:h-[100vh] w-full z-0">
         <video
-          className="object-fill brightness-[90%]"
+          className="object-cover h-full w-full brightness-[90%]"
           muted
           autoPlay
           loop
           playsInline
-          src={"/assets/videos/hero-video.mp4"}
+          src={"/assets/videos/herosectionvideo.mp4"}
         />
       </div>
 
@@ -45,7 +45,7 @@ const Hero = () => {
           </h1>
         </div>
       </div>
-      <RareLiving className="lg:hidden" />
+      <RareLiving />
     </section>
   );
 };

@@ -8,7 +8,7 @@ import Navigation from './Navigation';
 const NavBar = ({ ref }: { ref: RefObject<HTMLDivElement | null>}) => {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
   return (
-    <div>
+    <div className='sticky top-0'>
       <div className="bg-[rgba(194,181,133,0.5)] w-full px-[17px] py-[8px] flex items-center justify-between">
       <div onClick={() => setShowNavigation(true)}>
         <HamBurger />
