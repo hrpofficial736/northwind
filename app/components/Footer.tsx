@@ -18,7 +18,7 @@ const Footer = () => {
           <img
             src="/assets/rangoli.png"
             alt="rangoli"
-            className="object-cover w-full h-full opacity-50"
+            className="object-cover w-full justify-center h-full "
           />
         </div>
 
