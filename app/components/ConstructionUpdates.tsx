@@ -8,9 +8,9 @@ import useIsMobile from "@/hooks/useIsMobile";
 import { AnimatePresence, motion } from "framer-motion";
 import { manropeFont } from "@/utils/fonts";
 import Image from "next/image";
-import React, { useState } from "react";
+import React, { RefObject, useState } from "react";
 
-const ConstructionUpdates = () => {
+const ConstructionUpdates = ({ ref }: {ref: RefObject<HTMLDivElement | null>}) => {
   const { isMobile } = useIsMobile(1024);
   const [show, setShow] = useState<boolean>(false);
 
@@ -185,9 +185,12 @@ const ConstructionUpdates = () => {
         </div>
       </div>
 
-      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[100px] lg:mt-[72px] w-full">
+      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[100px] lg:mt-[200px] w-full">
         <PrimaryButton
           text="Sign up for updates"
+          onTap={() => {
+            document.getElementById("connect-with-us")?.scrollIntoView({ behavior: "smooth" })
+          }}
           className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} bg-primary text-secondary
           `}
         />

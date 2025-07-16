@@ -113,7 +113,7 @@ const Form = () => {
       </div>
 
       <PrimaryButton
-        text="Send OTP"
+        text="Submit Form"
         onTap={async () => {
           const responseFromAction = await submitForm(formData);
           if (responseFromAction) alert("Form submitted successfully!");

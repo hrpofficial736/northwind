@@ -5,24 +5,25 @@ import Loc from "@/components/icons/Loc";
 import Mail from "@/components/icons/Mail1";
 import Phone from "@/components/icons/Phone";
 import Globe from "@/components/icons/Globe";
+import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className="w-full flex flex-col bg-tertiary relative max-md:p-[20px_0px] max-md:h-[1000px] md:p-[120px_0px] gap-[80px] overflow-hidden bg-gradient-to-r from-black to-secondary">
-      <div className=" h-[134px] flex flex-col justify-center items-center z-20">
+    <footer className="w-full flex flex-col bg-tertiary relative max-md:p-[120px_0px] max-md:h-[1000px] md:p-[120px_80px] gap-[80px] overflow-hidden">
+      <div className="h-[134px] flex flex-col justify-center items-center z-20">
         <Sign />
       </div>
   
-      <div className="w-full h-full flex flex-row max-sm:flex-col-reverse items-center justify-center gap-[40px] relative z-10">
-        <div className="bottom-0 left-0 w-[679.85px] h-[496.61px] max-md:w-[322px] max-md:h-[150px] overflow-hidden">
+      <div className="w-full h-full flex flex-row max-sm:flex-col-reverse items-center justify-center gap-[0px] relative z-10">
+        <div className="overflow-hidden w-full h-[700px]">
           <img
             src="/assets/rangoli.png"
             alt="rangoli"
-            className="object-cover w-full justify-center h-full "
+            className="object-left object-cover w-full h-full"
           />
         </div>
 
-        <div className="flex flex-col h-[232px] items-start text-left text-white gap-[20px] ml-auto mr-32 mb-16 max-md:absolute inset-0 pl-10">
+        <div className="flex flex-col w-[500px] items-start text-left pr-0 text-white gap-[20px] mb-16 max-lg:absolute left-0 top-0 sm:max-lg:right-0 lg:inset-0 px-10">
           <div className="flex flex-col gap-2 items-start">
             <h1
               className={`${manropeFont.className} text-[28px] md:text-[32px] text-white`}
@@ -81,10 +82,10 @@ const Footer = () => {
           <a href="#" className="hover:text-gray-300 transition-colors">
             FACEBOOK
           </a>
-          <a href="#" className="hover:text-gray-300 transition-colors">
+          <a href="https://www.instagram.com/northwind.estates" target="_blank" className="hover:text-gray-300 transition-colors">
             INSTAGRAM
           </a>
-          <a href="#" className="hover:text-gray-300 transition-colors">
+          <a href="https://www.linkedin.com/company/northwind-estates-pvt-ltd/" target="_blank" className="hover:text-gray-300 transition-colors">
             LINKEDIN
           </a>
         </div>

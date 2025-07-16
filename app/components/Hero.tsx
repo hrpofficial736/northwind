@@ -10,7 +10,7 @@ const Hero = () => {
     <section className="w-full lg:h-[350vh] bg-secondary relative">
       <div className="sticky top-0 h-[100vh] w-full z-0">
         <video
-          className="object-cover h-full w-full brightness-[90%]"
+          className="object-cover h-full w-full"
           muted
           autoPlay
           loop

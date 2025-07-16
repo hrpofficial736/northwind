@@ -4,7 +4,7 @@ import Form from "./Form";
 
 const ConnectWithUs = () => {
   return (
-    <div className="w-full lg:h-[709px] bg-secondary relative p-[64px_24px] lg:p-[120px_40px] flex flex-col lg:flex-row gap-[36px]">
+    <div id="connect-with-us" className="w-full lg:h-[709px] bg-secondary relative p-[64px_24px] lg:p-[120px_40px] flex flex-col lg:flex-row gap-[36px]">
       <div className="flex flex-col   lg:w-[40%] lg:text-center">
         <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none">
           connect<br /> with us

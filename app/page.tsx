@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 import AboutArchitect from "./components/AboutArchitect";
 import AmaltasTower from "./components/AmaltasTower";
 import ConnectWithUs from "./components/ConnectWithUs";
@@ -14,6 +14,12 @@ import ImageGallery from "./components/ImageGallery";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    window.scrollBy({
+      top: 500
+    })
+  }, [])
   return (
     <div ref={ref} className="w-screen h-screen overflow-x-hidden relative">
       <NavBar ref={ref} />
@@ -22,7 +28,7 @@ export default function Home() {
       <ImageGallery />
       <MasterfullyPlanned />
 
-      <ConstructionUpdates />
+      <ConstructionUpdates ref={ref} />
       <SustainablyDesigned />
       <ConnectWithUs />
       <AboutArchitect />

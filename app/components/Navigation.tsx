@@ -49,17 +49,14 @@ const Navigation = ({
           <div className="flex flex-col gap-[12px] lg:gap-[16px] border-primary self-start">
             <div onClick={() => {
                 setShow(false);
-                ref.current?.scroll
+               
               }} className="uppercase font-boskaMedium text-[32px] lg:text-[64px] text-primary cursor-pointer">
               home
             </div>
             <div
               onClick={() => {
                 setShow(false);
-                ref.current?.scrollBy({
-                  top: 6880,
-                  behavior: "smooth",
-                });
+                document.getElementById("about-architect")?.scrollIntoView({ behavior: "smooth" })
               }}
               className="uppercase font-boskaMedium text-[32px] lg:text-[64px] text-primary cursor-pointer"
             >
@@ -72,10 +69,7 @@ const Navigation = ({
             <div
               onClick={() => {
                 setShow(false);
-                ref.current?.scrollBy({
-                  top: 10000,
-                  behavior: "smooth",
-                });
+               document.getElementById("connect-with-us")?.scrollIntoView({ behavior: "smooth" })
               }}
               className="uppercase font-boskaMedium text-[32px] lg:text-[64px] text-primary cursor-pointer"
             >

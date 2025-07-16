@@ -5,7 +5,7 @@ import React from "react";
 
 const AboutArchitect = () => {
   return (
-    <div className="w-full md:h-[906px] relative flex flex-col max-md:flex-col-reverse justify-center bg-input">
+    <div id="about-architect" className="w-full md:h-[906px] relative flex flex-col max-md:flex-col-reverse justify-center bg-input">
       
       <div className="bg-[url('/assets/architect-new.png')] w-full md:h-full min-h-[400px] bg-contain bg-center lg:bg-right bg-no-repeat bg-border" />
       <div className="flex flex-col max-lg:justify-end lg:justify-center md:max-w-[45%] max-md:bg-border p-[64px_24px] md:absolute md:inset-0 md:m-[120px_40px]">

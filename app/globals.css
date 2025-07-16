@@ -40,12 +40,10 @@
   --font-boskaItalic: "Boska-Italic";
   --font-boskaItalicMedium: "Boska-Italic-Medium";
   --breakpoint-custom580: 580px;
+  --breakpoint-custom896: 896px;
 }
 
 
-*::-webkit-scrollbar {
-  display: none
-}
 
 .glass {
   border: 1px solid rgba(255, 255, 255, 0.2);

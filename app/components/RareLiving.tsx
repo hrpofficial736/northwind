@@ -9,7 +9,13 @@ import React from "react";
 
 const RareLiving = () => {
   return (
-    <div className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg bg-gradient-to-b from-white/5 to-black/5 lg:absolute bottom-0`}>
+    <div
+      style={{
+        maskImage: "linear-gradient(to bottom, transparent, black 5%)",
+        WebkitMaskImage: "linear-gradient(to bottom, transparent, black 20%)",
+      }}
+      className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg lg:absolute bottom-0`}
+    >
       <div className="font-boskaMedium selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
         your rare living.
       </div>
@@ -18,10 +24,9 @@ const RareLiving = () => {
         <p
           className={`${manropeFont.className} text-[22px] lg:text-[35px] font-[400]`}
         >
-          
           Designed for serenity, privacy, and
-          
-          <br className="max-lg:hidden" />open perspectives.
+          <br className="max-lg:hidden" />
+          open perspectives.
         </p>
 
         <div className="max-sm:flex max-sm:flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-[35px] lg:w-[60%] max-sm:justify-items-center mt-[32px] max-sm:mt-[48px]">
@@ -145,8 +150,12 @@ const RareLiving = () => {
           />
           <SecondaryButton
             text="View Location"
-           
-           
+            onTap={() => {
+              window.open(
+                "https://www.google.com/maps/dir//Plot+No+-+GH+07,+Unitech+City,+Unitech+Horizon,+Pi+I+%26+II,+Greater+Noida,+Uttar+Pradesh+201310/@28.4805544,77.4641141,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x8ce321148fa4e875:0x8fe4480253bf60c2!2m2!1d77.5465155!2d28.4805792?hl=en&authuser=0&entry=ttu&g_ep=EgoyMDI1MDcxMy4wIKXMDSoASAFQAw%3D%3D",
+                "blank"
+              );
+            }}
             className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-white/10 duration-200 text-primary bg-transparent border-primary`}
           />
         </div>
