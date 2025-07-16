@@ -14,7 +14,7 @@ const RareLiving = () => {
         maskImage: "linear-gradient(to bottom, transparent, black 5%)",
         WebkitMaskImage: "linear-gradient(to bottom, transparent, black 20%)",
       }}
-      className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg lg:absolute bottom-0`}
+      className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg lg:absolute -bottom-5`}
     >
       <div className="font-boskaMedium selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
         your rare living.
@@ -31,7 +31,7 @@ const RareLiving = () => {
 
         <div className="max-sm:flex max-sm:flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-[35px] lg:w-[60%] max-sm:justify-items-center mt-[32px] max-sm:mt-[48px]">
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border lg:py-0 text-center`}
           >
             4.5 acres
             <p className={`text-[24px] ${manropeFont.className}`}>

@@ -43,6 +43,9 @@
   --breakpoint-custom896: 896px;
 }
 
+*::-webkit-scrollbar {
+  display: none;
+}
 
 
 .glass {
