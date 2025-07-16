@@ -15,13 +15,13 @@ const TowerComponent = ({ towerInfo }: TowerProps) => {
   return (
     <div
       
-      className="self-center flex flex-col gap-5 lg:flex-row items-center justify-between w-[80%] mt-[32px]"
+      className="self-center flex flex-col lg:gap-20 lg:flex-row items-center justify-between w-full 2xl:w-[90%] mt-[32px]"
     >
       <div
         style={{
           backgroundImage: `url("${towerInfo.image}")`,
         }}
-        className="w-[400px] h-[700px] lg:w-[1000px] lg:h-[800px] bg-cover mr-[150px]"
+        className="w-[400px] lg:w-[900px] xl:w-[600px] h-[620px] bg-cover bg-center"
       />
 
       <div className="flex flex-col gap-10">

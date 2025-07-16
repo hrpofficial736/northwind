@@ -22,6 +22,7 @@ const TextField = (props: TextFieldProps) => {
         className={`px-[20px] py-[8px] rounded-[99px] outline-2 outline-border bg-input text-primary ${manropeFont.className} text-[20px]`}
         value={props.value}
         type={props.type}
+        required
         name={props.name}
         onChange={props.onChanged}
         placeholder={props.placeholder}

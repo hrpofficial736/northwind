@@ -8,7 +8,7 @@ import RareLiving from "./RareLiving";
 const Hero = () => {
   return (
     <section className="w-full lg:h-[350vh] bg-secondary relative">
-      <div className="sticky top-0 max-lg:h-[100vh] lg:h-[30vh] xl:h-[60vh] 2xl:h-[100vh] w-full z-0">
+      <div className="sticky top-0 h-[100vh] w-full z-0">
         <video
           className="object-cover h-full w-full brightness-[90%]"
           muted

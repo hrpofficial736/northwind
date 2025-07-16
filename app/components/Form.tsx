@@ -16,6 +16,8 @@ const Form = () => {
     email: "",
     isSigned: false,
   });
+
+
   return (
     <div className="f-c-col lg:w-[60%] py-[20px] gap-[36px]">
       <div className="flex flex-col lg:grid grid-cols-2 gap-[24px] w-full">
@@ -111,7 +113,7 @@ const Form = () => {
       </div>
 
       <PrimaryButton
-        text="Submit Form"
+        text="Send OTP"
         onTap={async () => {
           const responseFromAction = await submitForm(formData);
           if (responseFromAction) alert("Form submitted successfully!");

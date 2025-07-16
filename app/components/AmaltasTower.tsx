@@ -47,7 +47,7 @@ const AmaltasTower = () => {
 
   return (
     <section className="bg-primary p-[64px_24px] lg:p-[120px_36px] relative w-full z-[9999] flex flex-col">
-      <div className={`f-c-row gap-[120px] ${manropeFont.className}`}>
+      <div className={`f-c-row gap-[80px] lg:gap-[120px] ${manropeFont.className}`}>
         <p
           onClick={() => {
             setCurrent(0);
