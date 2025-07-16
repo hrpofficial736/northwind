@@ -48,7 +48,7 @@ const ConstructionUpdates = () => {
 
   const listOfTowers = ["Tower 1", "Tower 2", "Tower 3"];
   return (
-    <div className="w-full relative p-[64px_24px] lg:p-[100px_40px] flex flex-col gap-[36px]">
+    <div className="w-full relative p-[64px_24px] lg:p-[100px_40px] flex flex-col gap-[36px] z-[9999]">
       <Image
         src={"/assets/background-image.png"}
         fill
