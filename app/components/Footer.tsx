@@ -5,7 +5,6 @@ import Loc from "@/components/icons/Loc";
 import Mail from "@/components/icons/Mail1";
 import Phone from "@/components/icons/Phone";
 import Globe from "@/components/icons/Globe";
-import Image from "next/image";
 
 const Footer = () => {
   return (

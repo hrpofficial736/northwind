@@ -11,9 +11,15 @@ import NavBar from "./components/NavBar";
 import SustainablyDesigned from "./components/SustainablyDesigned";
 import Footer from "./components/Footer";
 import ImageGallery from "./components/ImageGallery";
+import { useDisclaimerStore } from "@/stores/useDisclaimerStore";
+import Disclaimer from "./components/Disclaimer";
+import FullImage from "./components/FullImage";
+import { useFullImageStore } from "@/stores/useFullImageStore";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
+  const { show } = useDisclaimerStore();
+  const { display } = useFullImageStore();
 
   useEffect(() => {
     window.scrollBy({
@@ -21,13 +27,13 @@ export default function Home() {
     })
   }, [])
   return (
-    <div ref={ref} className="w-screen h-screen overflow-x-hidden relative">
+    <div ref={ref} className={`w-screen h-screen overflow-x-hidden relative ${show && "overflow-hidden"}`}>
       <NavBar ref={ref} />
       <Hero />
       <AmaltasTower />
       <ImageGallery />
       <MasterfullyPlanned />
-
+      <Disclaimer />
       <ConstructionUpdates ref={ref} />
       <SustainablyDesigned />
       <ConnectWithUs />

@@ -10,6 +10,8 @@ import { manropeFont } from "@/utils/fonts";
 import Image from "next/image";
 import React, { RefObject, useState } from "react";
 import { useMotionVariants } from "@/utils/motionVariant";
+import { useFullImageStore } from "@/stores/useFullImageStore";
+import FullImage from "./FullImage";
 
 const ConstructionUpdates = ({
   ref,
@@ -17,6 +19,7 @@ const ConstructionUpdates = ({
   ref: RefObject<HTMLDivElement | null>;
 }) => {
   const { isMobile } = useIsMobile(1024);
+  const { setDisplay, display } = useFullImageStore();
   const { initialVariant, viewVariant, transitionVariant, viewPortVariant } =
     useMotionVariants();
   const [show, setShow] = useState<boolean>(false);
@@ -55,14 +58,14 @@ const ConstructionUpdates = ({
 
   const listOfTowers = ["Tower 1", "Tower 2", "Tower 3"];
   return (
-    <div className="w-full relative p-[64px_24px] lg:p-[100px_40px] flex flex-col gap-[36px] z-[9999]">
+    <div className={`w-full relative p-[64px_24px] lg:p-[100px_40px] flex flex-col gap-[36px] z-[9999] ${display && "overflow-hidden"}`}>
       <Image
         src={"/assets/background-image.png"}
         fill
         alt="Architect"
-        className="-z-10"
+        className={`-z-10 ${display && "brightness-50"}`}
       />
-      <div className="flex flex-col justify-center">
+      <div className={`flex flex-col justify-center ${display && "brightness-50"}`}>
         <motion.h1
           initial={initialVariant}
           whileInView={viewVariant}
@@ -83,7 +86,7 @@ const ConstructionUpdates = ({
         </motion.p>
       </div>
 
-      <div className="w-full flex justify-end gap-1 items-center">
+      <div className={`${display && "brightness-50"} w-full flex justify-end gap-1 items-center`}>
         <LeftArrow
           onClick={handlePrev}
           className="text-primary cursor-pointer"
@@ -96,31 +99,35 @@ const ConstructionUpdates = ({
             className="flex gap-[8px] w-full transition-transform duration-200"
           >
             <Image
+              onClick={() => setDisplay("/assets/construction1.jpg")}
               src={"/assets/construction1.jpg"}
               width={isMobile ? 120 : 180}
               height={80}
-              className="rounded-[8px] grayscale-100"
+              className={`rounded-[8px] grayscale-100 cursor-pointer`}
               alt="building-2"
             />
             <Image
+              onClick={() => setDisplay("/assets/construction2.jpg")}
               src={"/assets/construction2.jpg"}
               width={isMobile ? 120 : 180}
               height={80}
-              className="rounded-[8px] grayscale-100"
+              className={`rounded-[8px] grayscale-100 cursor-pointer`}
               alt="building-2"
             />
             <Image
+              onClick={() => setDisplay("/assets/construction3.jpg")}
               src={"/assets/construction3.jpg"}
               width={isMobile ? 120 : 180}
               height={80}
-              className="rounded-[8px] grayscale-100"
+              className={`rounded-[8px] grayscale-100 cursor-pointer`}
               alt="building-3"
             />
             <Image
+              onClick={() => setDisplay("/assets/construction4.jpg")}
               src={"/assets/construction4.jpg"}
               width={isMobile ? 120 : 180}
               height={80}
-              className="rounded-[8px] grayscale-100"
+              className={`rounded-[8px] grayscale-100 cursor-pointer`}
               alt="building-3"
             />
           </div>
@@ -131,7 +138,7 @@ const ConstructionUpdates = ({
         />
       </div>
 
-      <div className="py-[24px] h-[264px]">
+      <div className={`py-[24px] h-[264px] ${display && "brightness-50"}`}>
         <div className="backdrop-blur-[40px] max-w-[629px] p-[20px_20px] rounded-[12px] border border-input text-primary relative">
           <h1 className={`${manropeFont.className} text-[24px] lg:text-[32px]`}>
             Latest Update
@@ -211,7 +218,7 @@ const ConstructionUpdates = ({
         </div>
       </div>
 
-      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[200px] w-full">
+      <div className={`${display && "brightness-50"} flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[200px] w-full`}>
         <PrimaryButton
           text="Sign up for updates"
           onTap={() => {
@@ -229,6 +236,7 @@ const ConstructionUpdates = ({
            border-primary`}
         />
       </div>
+      <FullImage />
     </div>
   );
 };
