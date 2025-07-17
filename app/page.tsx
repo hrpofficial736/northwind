@@ -12,11 +12,13 @@ import SustainablyDesigned from "./components/SustainablyDesigned";
 import Footer from "./components/Footer";
 import ImageGallery from "./components/ImageGallery";
 import WatchSite from "./components/WatchSite";
+import Disclaimer from "./components/Disclaimer";
+import { useDisclaimerStore } from "@/stores/useDisclaimerStore";
+import { useFullImageStore } from "@/stores/useFullImageStore";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
   const { show } = useDisclaimerStore();
-  const { display } = useFullImageStore();
 
   useEffect(() => {
     window.scrollBy({
