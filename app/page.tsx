@@ -11,6 +11,7 @@ import NavBar from "./components/NavBar";
 import SustainablyDesigned from "./components/SustainablyDesigned";
 import Footer from "./components/Footer";
 import ImageGallery from "./components/ImageGallery";
+import WatchSite from "./components/WatchSite";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
@@ -29,6 +30,7 @@ export default function Home() {
       <MasterfullyPlanned />
 
       <ConstructionUpdates ref={ref} />
+      <WatchSite />
       <SustainablyDesigned />
       <ConnectWithUs />
       <AboutArchitect />

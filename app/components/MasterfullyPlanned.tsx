@@ -103,7 +103,10 @@ const MasterfullyPlanned = () => {
             
         />
         <SecondaryButton
-          onTap={() => setClicked(!clicked)}
+          onTap={() =>{
+             setClicked(!clicked)
+             window.open("/assets/certificates/towerc.pdf")
+          }}
           text="Master plan"
           className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className

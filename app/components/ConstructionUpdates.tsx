@@ -225,6 +225,9 @@ const ConstructionUpdates = ({
         <SecondaryButton
           text="Watch site video"
           icon={<VideoCircle />}
+          onTap={()=>{
+            
+          }}
           className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} text-primary bg-transparent border
            border-primary`}
         />
