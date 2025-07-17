@@ -91,21 +91,25 @@ const MasterfullyPlanned = () => {
       <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 max-lg:mt-[28px] lg:mt-[32px] w-full">
         <PrimaryButton
           text="Express Interest"
-          onTap={() => setClicked(!clicked)}
+          onTap={() =>{
+            document.getElementById("connect-with-us")?.scrollIntoView({behavior:"smooth"})
+          }
+             
+          }
           className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
-          } ${
-            clicked ? "bg-primary text-secondary" : "bg-secondary text-primary"
-          }`}
+          }  bg-secondary text-primary`
+          }
+            
         />
         <SecondaryButton
           onTap={() => setClicked(!clicked)}
-          text="View Floor Plan"
+          text="Master plan"
           className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
             manropeFont.className
-          } ${
-            clicked ? "bg-secondary text-primary" : "bg-primary text-secondary"
-          } border-secondary`}
+          } 
+             bg-primary text-secondary
+           border-secondary`}
         />
       </div>
     </div>
