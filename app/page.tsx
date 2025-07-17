@@ -15,6 +15,8 @@ import WatchSite from "./components/WatchSite";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
+  const { show } = useDisclaimerStore();
+  const { display } = useFullImageStore();
 
   useEffect(() => {
     window.scrollBy({
@@ -22,13 +24,13 @@ export default function Home() {
     })
   }, [])
   return (
-    <div ref={ref} className="w-screen h-screen overflow-x-hidden relative">
+    <div ref={ref} className={`w-screen h-screen overflow-x-hidden relative ${show && "overflow-hidden"}`}>
       <NavBar ref={ref} />
       <Hero />
       <AmaltasTower />
       <ImageGallery />
       <MasterfullyPlanned />
-
+      <Disclaimer />
       <ConstructionUpdates ref={ref} />
       <WatchSite />
       <SustainablyDesigned />
