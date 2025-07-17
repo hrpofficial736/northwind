@@ -23,7 +23,7 @@ const Footer = () => {
           />
         </div>
 
-        <div className="flex flex-col w-[500px] items-start text-left pr-0 text-white gap-[20px] mb-16 max-lg:absolute left-0 top-0 sm:max-lg:right-0 lg:inset-0 px-10">
+        <div className="flex flex-col w-[500px] items-start text-left text-white gap-[20px] mb-16 max-lg:absolute left-0 top-0 sm:max-lg:right-0 lg:inset-0 px-10 mr-14">
           <div className="flex flex-col gap-2 items-start">
             <h1
               className={`${manropeFont.className} text-[28px] md:text-[32px] text-white`}
