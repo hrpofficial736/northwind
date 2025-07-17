@@ -4,8 +4,11 @@ import Logo from "@/components/Logo";
 import { manropeFont } from "@/utils/fonts";
 import React from "react";
 import RareLiving from "./RareLiving";
+import { motion } from "framer-motion";
+import { useMotionVariants } from "@/utils/motionVariant";
 
 const Hero = () => {
+  const { initialVariant, viewVariant, transitionVariant, viewPortVariant } = useMotionVariants();
   return (
     <section className="w-full lg:h-[375vh] bg-secondary relative">
       <div className="sticky top-0 h-[100vh] w-full z-0">
@@ -23,7 +26,7 @@ const Hero = () => {
         <div className="self-center">
           <Logo />
         </div>
-        <div className="self-start ml-10">
+        <motion.div initial={initialVariant} whileInView={viewVariant} transition={transitionVariant} viewport={viewPortVariant} className="self-start ml-10">
           <h1
             className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text`}
           >
@@ -32,9 +35,9 @@ const Hero = () => {
           <h1 className="font-boskaItalicMedium text-text text-[60px] leading-none custom580:text-[75px] lg:text-[100px] 2xl:text-[128px] ml-20 custom580:ml-40">
             home
           </h1>
-        </div>
+        </motion.div>
 
-        <div className="text-right self-end ml-10">
+        <motion.div initial={initialVariant} whileInView={viewVariant} transition={transitionVariant} viewport={viewPortVariant} className="text-right self-end ml-10">
           <h1
             className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text mr-[50px] custom580:mr-[50px] lg:mr-[180px]`}
           >
@@ -43,7 +46,7 @@ const Hero = () => {
           <h1 className="font-boskaItalicMedium text-text text-[60px] custom580:text-[75px] lg:text-[100px] 2xl:text-[128px] leading-none">
             sanctuary
           </h1>
-        </div>
+        </motion.div>
       </div>
       <RareLiving />
     </section>

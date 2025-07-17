@@ -1,3 +1,5 @@
+"use client";
+
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
 import Bulb from "@/components/icons/Bulb";
@@ -8,19 +10,29 @@ import Tree from "@/components/icons/Tree";
 import Vent from "@/components/icons/Vent";
 import { manropeFont } from "@/utils/fonts";
 import React from "react";
+import { motion } from "framer-motion";
+import { useMotionVariants } from "@/utils/motionVariant";
 
 const SustainablyDesigned = () => {
+  const { initialVariant, viewVariant, viewPortVariant, transitionVariant } = useMotionVariants();
   return (
     <div className="w-full lg:h-[1100px] bg-secondary relative p-[88px_24px] lg:p-[120px_40px] flex flex-col gap-[36px]">
       <div className="flex flex-col justify-center">
-        <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none">
+        <motion.h1 initial={initialVariant}
+          whileInView={viewVariant}
+          transition={transitionVariant}
+          viewport={viewPortVariant} className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none">
           sustainably designed.
-        </h1>
-        <p
+        </motion.h1>
+        <motion.p
+        initial={initialVariant}
+          whileInView={viewVariant}
+          transition={transitionVariant}
+          viewport={viewPortVariant}
           className={`${manropeFont.className} text-[24px] lg:text-[32px] text-primary mt-[12px]`}
         >
           IGBC platinum pre-certified.
-        </p>
+        </motion.p>
       </div>
 
 

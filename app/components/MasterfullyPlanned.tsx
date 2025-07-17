@@ -6,8 +6,11 @@ import React, { useState } from "react";
 import Image from "next/image";
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
+import { useMotionVariants } from "@/utils/motionVariant";
+import { motion } from "framer-motion";
 
 const MasterfullyPlanned = () => {
+  const { initialVariant, viewVariant, viewPortVariant, transitionVariant } = useMotionVariants();
   const sections: Array<{
     name: string;
     map: string;
@@ -49,9 +52,9 @@ const MasterfullyPlanned = () => {
 
   return (
     <div className="w-full lg:h-[1194px] bg-primary relative p-[64px_16px] lg:p-[120px_36px] gap-[44px] flex flex-col">
-      <h1 className={"font-boskaMedium text-[64px] lg:text-[96px] text-secondary"}>
+      <motion.h1 initial={initialVariant} whileInView={viewVariant} viewport={viewPortVariant} transition={transitionVariant} className={"font-boskaMedium text-[64px] lg:text-[96px] text-secondary"}>
         masterfully planned
-      </h1>
+      </motion.h1>
 
       {/* Map Section */}
       <div className="outline-2 outline-border rounded-[20px] h-max lg:h-[678px] flex flex-col lg:flex-row items-start w-[90%] xl:w-[70%] self-center">
