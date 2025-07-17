@@ -73,7 +73,7 @@ const MasterfullyPlanned = () => {
         </div>
 
         {/* Maps */}
-        <div className="relative h-[300px] sm:max-lg:h-[600px] lg:h-full w-full border">
+        <div className="relative h-[300px] sm:max-lg:h-[600px] lg:h-full w-full ">
           <Image
             alt={sections[current].name}
             src={sections[current].map}

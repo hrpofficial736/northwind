@@ -11,6 +11,7 @@ type TowerProps = {
   name: string;
   description: string;
   image: string;
+  pdfLink: string
 };
 
 const AmaltasTower = () => {
@@ -18,24 +19,29 @@ const AmaltasTower = () => {
 
   const [current, setCurrent] = useState<number>(0);
 
+
+
   const towersInfo: TowerProps[] = [
     {
       name: "amaltas tower",
       description: `Sanctuary comes to life under the creative hand of Mr. Vishal Sharma, Confluence's lead architect.
         Widely admired for merging classic beauty with modern green technology.`,
       image: "/assets/amaltas.png",
+      pdfLink:"assets/certificates/towerA.pdf",
     },
     {
       name: "banyan tower",
       description: `Sanctuary comes to life under the creative hand of Mr. Vishal Sharma, Confluence's lead architect.
         Widely admired for merging classic beauty with modern green technology.`,
       image: "/assets/banyan.png",
+      pdfLink:"assets/certificates/towerb.pdf",
     },
     {
       name: "cedar tower",
       description: `Sanctuary comes to life under the creative hand of Mr. Vishal Sharma, Confluence's lead architect.
         Widely admired for merging classic beauty with modern green technology.`,
       image: "/assets/cedar.png",
+      pdfLink:"assets/certificates/towerc.pdf",
     },
   ];
 
@@ -94,26 +100,7 @@ const AmaltasTower = () => {
         </motion.div>
       </AnimatePresence>
 
-      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[28px] lg:mt-[32px] w-full">
-        <PrimaryButton
-          text="Express Interest"
-          onTap={() => setClicked(!clicked)}
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
-            manropeFont.className
-          } ${
-            clicked ? "bg-primary text-secondary" : "bg-secondary text-primary"
-          }`}
-        />
-        <SecondaryButton
-          onTap={() => setClicked(!clicked)}
-          text="View Floor Plan"
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
-            manropeFont.className
-          } ${
-            clicked ? "bg-secondary text-primary" : "bg-primary text-secondary"
-          } border-secondary`}
-        />
-      </div>
+      
     </section>
   );
 };

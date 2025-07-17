@@ -36,7 +36,7 @@ const ImageGallery = () => {
           style={{
             transform: `translateX(-${current * 100}%)`,
           }}
-          className="flex transition-transform duration-200 ease-in-out w-full"
+          className="flex transition-transform duration-600 ease-in-out w-full"
         >
           {images.map((image, index) => {
             return (
