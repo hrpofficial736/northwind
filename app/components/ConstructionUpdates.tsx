@@ -185,7 +185,7 @@ const ConstructionUpdates = ({ ref }: {ref: RefObject<HTMLDivElement | null>}) =
         </div>
       </div>
 
-      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[100px] lg:mt-[200px] w-full">
+      <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[200px] w-full">
         <PrimaryButton
           text="Sign up for updates"
           onTap={() => {

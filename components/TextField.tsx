@@ -12,6 +12,7 @@ export type TextFieldProps = {
   onChanged: (e: React.ChangeEvent<HTMLInputElement>) => void;
   label: string;
   className?: string;
+  maxLength?: number;
 };
 
 const TextField = (props: TextFieldProps) => {
@@ -19,6 +20,8 @@ const TextField = (props: TextFieldProps) => {
     <div className={clsx("flex flex-col gap-1", props.className)}>
       <label className={`${manropeFont.className} text-primary text-[20px]`}>{props.label}</label>
       <input
+      maxLength={props.maxLength}
+      
         className={`px-[20px] py-[8px] rounded-[99px] outline-2 outline-border bg-input text-primary ${manropeFont.className} text-[20px]`}
         value={props.value}
         type={props.type}

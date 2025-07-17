@@ -18,6 +18,34 @@ const Form = () => {
   });
 
 
+  const handleFormValidation = () => {
+    if (
+      formData.name.length === 0 ||
+      formData.email.length === 0 ||
+      formData.message.length === 0 ||
+      formData.mobile.length === 0
+    ) return false;
+
+    if (!formData.email.includes("@")) return false;
+
+    if (!Number.isInteger(Number.parseInt(formData.mobile))) return false;
+
+
+    return true;
+  }
+
+
+  const handleFormSubmission = async () => {
+    const isFormValidated = handleFormValidation();
+    if (!isFormValidated) {
+      alert("Invalid values submitted in the form!");
+      return;
+    }
+
+    const responseFromAction = await submitForm(formData);
+    if (responseFromAction) alert("Form submitted successfully!")
+  }
+
   return (
     <div className="f-c-col lg:w-[60%] py-[20px] gap-[36px]">
       <div className="flex flex-col lg:grid grid-cols-2 gap-[24px] w-full">
@@ -41,10 +69,11 @@ const Form = () => {
         />
         <TextField
           name="mobile"
+          maxLength={10}
           label="Mobile Number"
           placeholder="Enter mobile number"
           value={formData.mobile}
-          type="number"
+          type="tel"
           onChanged={(e) => {
             setFormData((prevdata) => {
               const { name, value } = e.target;
@@ -114,10 +143,7 @@ const Form = () => {
 
       <PrimaryButton
         text="Submit Form"
-        onTap={async () => {
-          const responseFromAction = await submitForm(formData);
-          if (responseFromAction) alert("Form submitted successfully!");
-        }}
+        onTap={handleFormSubmission}
         className={`p-[20px_40px] lg:self-start self-center max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} bg-submit text-secondary hover:bg-submit/90
           `}
       />
