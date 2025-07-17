@@ -13,7 +13,10 @@ const NavBar = ({ ref }: { ref: RefObject<HTMLDivElement | null>}) => {
       <div onClick={() => setShowNavigation(true)}>
         <HamBurger />
       </div>
-      <PrimaryButton text="Enquire Now" className="p-[12px_36px] max-sm:hidden" />
+      <PrimaryButton onTap={()=>{
+        document.getElementById("connect-with-us")?.scrollIntoView({behavior:"smooth"})
+      }}   text="Enquire Now" className="p-[12px_36px] max-sm:hidden" />
+      
     </div>
 
     <Navigation ref={ref} show={showNavigation} setShow={setShowNavigation} />
