@@ -1,32 +1,40 @@
+"use client";
+
+
 import React from 'react';
-import { X } from 'lucide-react';
+import { AnimatePresence, motion } from 'framer-motion';
+import Cross from '@/components/icons/Cross';
 
-
-
-const WatchSite = ({onClose }) => {
+const WatchSite = ({ display, setDisplay }: { display: boolean, setDisplay: React.Dispatch<React.SetStateAction<boolean>> }) => {
   return (
-    <div className="relative h-[100vh] w-full inline-block">
-      
-      <button
-        onClick={onClose}
-        className="absolute top-4 right-6 z-10 bg-black bg-opacity-60 hover:bg-opacity-80 text-white rounded-full p-1 hover:scale-110"
-        aria-label="Close video"
-      >
-        <X size={20} />
-      </button>
+    <AnimatePresence>
+      {display && (
+        <motion.div
+            initial={{
+                opacity: 0
+            }} animate={{
+                opacity: 1
+            }}
+            transition={{
+                duration: 0.3,
+                type: "tween"
+            }}
+            exit={{
+                opacity: 0
+            }}
+        className="bg-secondary w-[90vw] h-[60vh] lg:h-[90vh] blur-0 backdrop-brightness-200 outline-2 outline-border p-[10px_20px] rounded-2xl flex flex-col absolute z-[9999999] left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
+          <div
+            onClick={() => setDisplay(false)}
+            className="self-start lg:self-end p-2 rounded-xl cursor-pointer"
+          >
+            <Cross />
+          </div>
 
-      
-      <video
-       className="object-cover h-full w-full rounded-2xl"
-        muted
-        autoPlay
-        loop
-        playsInline
-        src={"/assets/videos/siteVideo.mp4"}
-      > 
-      </video>
-    </div>
-  );
-};
+          <video src={"/assets/videos/siteVideo.mp4"} autoPlay muted loop className="h-[90%] w-full rounded-2xl" />
+        </motion.div>
+      )}
+    </AnimatePresence>
+  )
+}
 
-export default WatchSite;
+export default WatchSite

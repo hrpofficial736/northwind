@@ -12,6 +12,7 @@ import React, { RefObject, useState } from "react";
 import { useMotionVariants } from "@/utils/motionVariant";
 import { useFullImageStore } from "@/stores/useFullImageStore";
 import FullImage from "./FullImage";
+import WatchSite from "./WatchSite";
 
 const ConstructionUpdates = ({
   ref,
@@ -27,6 +28,8 @@ const ConstructionUpdates = ({
   const [current, setCurrent] = useState<number>(0);
 
   const [caraouselIndex, setCaraouselIndex] = useState<number>(0);
+
+  const [showSiteVideo, setShowSiteVideo] = useState<boolean>(false);
 
   const handlePrev = () => {
     if (caraouselIndex > 0) setCaraouselIndex(caraouselIndex - 1);
@@ -63,9 +66,9 @@ const ConstructionUpdates = ({
         src={"/assets/background-image.png"}
         fill
         alt="Architect"
-        className={`-z-10 ${display && "brightness-50"}`}
+        className={`-z-10 ${(display || showSiteVideo) && "brightness-50"}`}
       />
-      <div className={`flex flex-col justify-center ${display && "brightness-50"}`}>
+      <div className={`flex flex-col justify-center ${(display || showSiteVideo) && "brightness-50"}`}>
         <motion.h1
           initial={initialVariant}
           whileInView={viewVariant}
@@ -86,7 +89,7 @@ const ConstructionUpdates = ({
         </motion.p>
       </div>
 
-      <div className={`${display && "brightness-50"} w-full flex justify-end gap-1 items-center`}>
+      <div className={`${(display || showSiteVideo) && "brightness-50"} w-full flex justify-end gap-1 items-center`}>
         <LeftArrow
           onClick={handlePrev}
           className="text-primary cursor-pointer"
@@ -138,7 +141,7 @@ const ConstructionUpdates = ({
         />
       </div>
 
-      <div className={`py-[24px] h-[264px] ${display && "brightness-50"}`}>
+      <div className={`py-[24px] h-[264px] ${(display || showSiteVideo) && "brightness-50"}`}>
         <div className="backdrop-blur-[40px] max-w-[629px] p-[20px_20px] rounded-[12px] border border-input text-primary relative">
           <h1 className={`${manropeFont.className} text-[24px] lg:text-[32px]`}>
             Latest Update
@@ -218,7 +221,7 @@ const ConstructionUpdates = ({
         </div>
       </div>
 
-      <div className={`${display && "brightness-50"} flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[200px] w-full`}>
+      <div className={`${(display || showSiteVideo) && "brightness-50"} flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[200px] w-full`}>
         <PrimaryButton
           text="Sign up for updates"
           onTap={() => {
@@ -233,13 +236,14 @@ const ConstructionUpdates = ({
           text="Watch site video"
           icon={<VideoCircle />}
           onTap={()=>{
-            
+            setShowSiteVideo(true)
           }}
           className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} text-primary bg-transparent border
            border-primary`}
         />
       </div>
       <FullImage />
+      <WatchSite display={showSiteVideo} setDisplay={setShowSiteVideo} />
     </div>
   );
 };
