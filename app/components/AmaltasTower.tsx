@@ -15,9 +15,10 @@ type TowerProps = {
 };
 
 const AmaltasTower = () => {
-  const [clicked, setClicked] = useState<boolean>(false);
 
   const [current, setCurrent] = useState<number>(0);
+
+
 
 
 
@@ -54,36 +55,36 @@ const AmaltasTower = () => {
   return (
     <section className="bg-primary p-[64px_24px] lg:p-[120px_36px] relative w-full z-[9999] flex flex-col">
       <div className={`f-c-row gap-[80px] lg:gap-[120px] ${manropeFont.className}`}>
-        <p
+        <button
           onClick={() => {
             setCurrent(0);
           }}
-          className={`text-[28px] lg:text-[36px] cursor-pointer ${
-            current !== 0 && "text-secondary/30"
+          className={`text-[28px] lg:text-[36px] bg-secondary cursor-pointer text-primary rounded-[99px] px-9 py-3 ${
+            current !== 0 && "text-secondary border bg-transparent"
           }`}
         >
           3BHK
-        </p>
-        <p
+        </button>
+        <button
           onClick={() => {
             setCurrent(1);
           }}
-          className={`text-[28px] lg:text-[36px] cursor-pointer ${
-            current !== 1 && "text-secondary/30"
+          className={`text-[28px] lg:text-[36px] bg-secondary text-primary rounded-[99px] cursor-pointer px-9 py-3 ${
+            current !== 1 && "text-secondary border bg-transparent"
           }`}
         >
           4BHK
-        </p>
-        <p
+        </button>
+        <button
           onClick={() => {
             setCurrent(2);
           }}
-          className={`text-[28px] lg:text-[36px] cursor-pointer ${
-            current !== 2 && "text-secondary/30"
+          className={`text-[28px] lg:text-[36px] bg-secondary text-primary rounded-[99px] cursor-pointer px-9 py-3 ${
+            current !== 2 && "text-secondary border bg-transparent"
           }`}
         >
           4.5BHK
-        </p>
+        </button>
       </div>
 
       {/* Towers */}
