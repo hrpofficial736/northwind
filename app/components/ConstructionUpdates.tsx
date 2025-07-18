@@ -19,8 +19,8 @@ const ConstructionUpdates = ({
 }: {
   ref: RefObject<HTMLDivElement | null>;
 }) => {
-  const { isMobile } = useIsMobile(1024);
-  const { setDisplay, display } = useFullImageStore();
+  const { isMobile } = useIsMobile(1024);       //custom hook without store
+  const { setDisplay, display } = useFullImageStore(); //custom hook with store
   const { initialVariant, viewVariant, transitionVariant, viewPortVariant } =
     useMotionVariants();
   const [show, setShow] = useState<boolean>(false);
@@ -31,7 +31,7 @@ const ConstructionUpdates = ({
 
   const [showSiteVideo, setShowSiteVideo] = useState<boolean>(false);
 
-  const handlePrev = () => {
+  const handlePrev = () => {                                               //handler
     if (caraouselIndex > 0) setCaraouselIndex(caraouselIndex - 1);
   };
 
@@ -229,7 +229,7 @@ const ConstructionUpdates = ({
               .getElementById("connect-with-us")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-secondary/95 durantion:200 ${manropeFont.className} bg-primary text-secondary
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-primary/80 durantion:200 ${manropeFont.className} bg-primary text-secondary
           `}
         />
         <SecondaryButton

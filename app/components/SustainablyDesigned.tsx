@@ -13,7 +13,15 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useMotionVariants } from "@/utils/motionVariant";
 
+
+import useIsMobile from "@/hooks/useIsMobile";
+import { useState } from "react";
+import FullCertificate from "./FullCertificate";
+
+
 const SustainablyDesigned = () => {
+  
+  const [display,setDisplay ] = useState<boolean>(false);
   const { initialVariant, viewVariant, viewPortVariant, transitionVariant } = useMotionVariants();
   return (
     <div className="w-full lg:h-[1100px] bg-secondary relative p-[88px_24px] lg:p-[120px_40px] flex flex-col gap-[36px]">
@@ -74,26 +82,28 @@ const SustainablyDesigned = () => {
       <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[28px] lg:mt-[32px] w-full">
         <PrimaryButton
           text="View Certification"
-          onTap={() => {
-            window.open("/assets/certificates/IGBC CERTIFICATE.pdf", "blank")
-          }}
-          className={`p-[20px_40px] max-md:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
-            manropeFont.className
-          } bg-primary text-secondary
-          `}
-        />
+         onTap={()=>{
+                     setDisplay(true)
+                   }}
+                   className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-white/10 ${manropeFont.className} text-primary bg-transparent border
+                    border-primary`}
+                 />
+  
+          
+        
         <SecondaryButton
           text="Green Guidelines PDF"
           onTap={() => {
             window.open("/assets/certificates/IGBC GUIDELINES.pdf", "blank")
           }}
-          className={`p-[20px_40px] max-md:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-md:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-white/10 ${
             manropeFont.className
           } text-primary bg-transparent border
            border-primary`}
         />
         </div>
-
+      
+        <FullCertificate display={display} setDisplay={setDisplay}/>
 
 
     </div>

@@ -3,11 +3,11 @@
 
 import React from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
-import { useFullImageStore } from '@/stores/useFullImageStore';
+
 import Cross from '@/components/icons/Cross';
 
-const FullImage = () => {
-    const { display, setDisplay, src} = useFullImageStore();
+const FullCertificate = ({display,setDisplay}:{display:boolean;setDisplay:React.Dispatch<React.SetStateAction<boolean>>}) => {
+
   return (
     <AnimatePresence>
       {display && (
@@ -26,14 +26,14 @@ const FullImage = () => {
             }}
         className="bg-secondary w-[90vw] h-[60vh] lg:h-[90vh] blur-0 backdrop-brightness-200 outline-2 outline-border p-[10px_20px] rounded-2xl flex flex-col absolute z-[9999999] left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2">
           <div
-            onClick={() => setDisplay(src)}
+            onClick={() => setDisplay(false)}
             className="self-start lg:self-end p-2 rounded-xl cursor-pointer"
           >
             <Cross />
           </div>
 
           <div style={{
-            backgroundImage: `url("${src}")`
+            backgroundImage: `url("/assets/construction3.jpg")`
           }} className="w-[90%] h-[90%] rounded-xl bg-cover bg-center self-center mt-[20px]" />
         </motion.div>
       )}
@@ -41,4 +41,4 @@ const FullImage = () => {
   )
 }
 
-export default FullImage
+export default FullCertificate;
