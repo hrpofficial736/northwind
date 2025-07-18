@@ -24,10 +24,10 @@ const AmaltasTower = () => {
 
   const towersInfo: TowerProps[] = [
     {
-      name: "amaltas tower",
+      name: "cedar tower",
       description: `Sanctuary comes to life under the creative hand of Mr. Vishal Sharma, Confluence's lead architect.
         Widely admired for merging classic beauty with modern green technology.`,
-      image: "/assets/amaltas.png",
+      image: "/assets/cedar.png",
       pdfLink:"assets/certificates/towerA.pdf",
     },
     {
@@ -38,10 +38,10 @@ const AmaltasTower = () => {
       pdfLink:"assets/certificates/towerb.pdf",
     },
     {
-      name: "cedar tower",
+      name: "amaltas tower",
       description: `Sanctuary comes to life under the creative hand of Mr. Vishal Sharma, Confluence's lead architect.
         Widely admired for merging classic beauty with modern green technology.`,
-      image: "/assets/cedar.png",
+      image: "/assets/amaltas.png",
       pdfLink:"assets/certificates/towerc.pdf",
     },
   ];
@@ -54,7 +54,7 @@ const AmaltasTower = () => {
 
   return (
     <section className="bg-primary p-[64px_24px] lg:p-[120px_36px] relative w-full z-[9999] flex flex-col">
-      <div className={`f-c-row gap-[80px] lg:gap-[120px] ${manropeFont.className}`}>
+      <div className={`f-c-row gap-[70px] lg:gap-[120px] ${manropeFont.className}`}>
         <button
           onClick={() => {
             setCurrent(0);

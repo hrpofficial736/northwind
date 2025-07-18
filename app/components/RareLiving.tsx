@@ -11,12 +11,12 @@ const RareLiving = () => {
   return (
     <div
       style={{
-        maskImage: "linear-gradient(to bottom, transparent, black 9%)",
+        maskImage: "linear-gradient(to bottom, transparent, black 10%)",
         WebkitMaskImage: "linear-gradient(to bottom, transparent, black 20%)",
       }}
       className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg lg:absolute -bottom-5`}
     >
-      <div className="font-boskaMedium selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
+      <div className="font-boskaMedium  selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
         your rare living.
       </div>
 
@@ -24,9 +24,9 @@ const RareLiving = () => {
         <p
           className={`${manropeFont.className} text-[22px] lg:text-[35px] font-[400]`}
         >
-          Designed for serenity, privacy, and
+          Designed for serenity, privacy, and open perspectives.
           <br className="max-lg:hidden" />
-          open perspectives.
+          
         </p>
 
         <div className="max-sm:flex max-sm:flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-[35px] lg:w-[60%] max-sm:justify-items-center mt-[32px] max-sm:mt-[48px]">

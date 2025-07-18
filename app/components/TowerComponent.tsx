@@ -37,7 +37,7 @@ const TowerComponent = ({ towerInfo }: TowerProps) => {
         className="w-[400px] lg:w-[900px] xl:w-[600px] h-[620px] bg-cover bg-center"
       />
 
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 px-[10px]">
         <h1
           className={`font-boskaMedium text-secondary text-[64px] leading-[120%] lg:text-[96px]`}
         >
@@ -50,14 +50,14 @@ const TowerComponent = ({ towerInfo }: TowerProps) => {
 
      
     </div>
-     <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[28px] lg:mt-[32px] w-full">
+     <div className="flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[28px] lg:mt-[32px] w-full px-[10px]">
               <PrimaryButton
                 text="Express Interest"
                 onTap={() => {
                   setClicked(!clicked)
                   document.getElementById("connect-with-us")?.scrollIntoView({behavior:"smooth"})
                 }}
-                className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+                className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-secondary/80 duration-200 ${
                   manropeFont.className
                 } ${
                   clicked ? "bg-primary text-secondary" : "bg-secondary text-primary"
@@ -70,7 +70,7 @@ const TowerComponent = ({ towerInfo }: TowerProps) => {
                 }}
                 
                 text="View Floor Plan"
-                className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+                className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-amber-200/20 duration-200${
                   manropeFont.className
                 } ${
                   clicked ? "bg-secondary text-primary" : "bg-primary text-secondary"

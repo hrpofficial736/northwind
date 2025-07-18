@@ -59,7 +59,7 @@ const ConstructionUpdates = ({
     ],
   ];
 
-  const listOfTowers = ["Tower 1", "Tower 2", "Tower 3"];
+  const listOfTowers = ["Amaltas", "Banyan", "Cedar"];
   return (
     <div className={`w-full relative p-[64px_24px] lg:p-[100px_40px] flex flex-col gap-[36px] z-[9999] ${display && "overflow-hidden"}`}>
       <Image
@@ -187,7 +187,7 @@ const ConstructionUpdates = ({
                   }}
                   className="hover:bg-input/80 w-full f-c-row p-2 cursor-pointer rounded-t-2xl"
                 >
-                  Tower 1
+                  Amaltas
                 </div>
                 <div
                   onClick={() => {
@@ -196,7 +196,7 @@ const ConstructionUpdates = ({
                   }}
                   className="hover:bg-input/80 w-full f-c-row p-2 cursor-pointer"
                 >
-                  Tower 2
+                  Banyan
                 </div>
                 <div
                   onClick={() => {
@@ -205,7 +205,7 @@ const ConstructionUpdates = ({
                   }}
                   className="hover:bg-input/80 w-full f-c-row p-2 cursor-pointer rounded-b-2xl"
                 >
-                  Tower 3
+                  Cedar
                 </div>
               </motion.div>
             )}
@@ -229,7 +229,7 @@ const ConstructionUpdates = ({
               .getElementById("connect-with-us")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} bg-primary text-secondary
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-secondary/95 durantion:200 ${manropeFont.className} bg-primary text-secondary
           `}
         />
         <SecondaryButton

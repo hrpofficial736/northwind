@@ -16,32 +16,37 @@ const MasterfullyPlanned = () => {
     map: string;
   }> = [
     {
-      name: "1. Arrival Zone",
-      map: maps[0],
+      name: "View Master Plan",
+      map: maps[0]
     },
+
     {
-      name: "2. Recreational Zone",
+      name: "1. Arrival Zone",
       map: maps[1],
     },
     {
-      name: "3. Active Zone",
+      name: "2. Recreational Zone",
       map: maps[2],
     },
     {
-      name: "4. Fun & Entertainment",
+      name: "3. Active Zone",
       map: maps[3],
     },
     {
-      name: "5. Sports Zone",
+      name: "4. Fun & Entertainment",
       map: maps[4],
     },
     {
-      name: "6. Serenity Walk",
+      name: "5. Sports Zone",
       map: maps[5],
     },
     {
-      name: "7. Under Serenity Walk",
+      name: "6. Serenity Walk",
       map: maps[6],
+    },
+    {
+      name: "7. Under Serenity Walk",
+      map: maps[7],
     },
   ];
 
@@ -96,19 +101,19 @@ const MasterfullyPlanned = () => {
           }
              
           }
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-secondary/80 duration-20 ${
             manropeFont.className
-          }  bg-secondary text-primary`
+          }  bg-secondary/90 text-primary`
           }
             
         />
         <SecondaryButton
           onTap={() =>{
              setClicked(!clicked)
-             window.open("/assets/certificates/towerc.pdf")
+             window.open("/assets/certificates/masterPlan.pdf")
           }}
           text="Master plan"
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px]   hover:bg-amber-200/20 duration-200  lg:text-[24px]  ${
             manropeFont.className
           } 
              bg-primary text-secondary
