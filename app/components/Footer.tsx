@@ -43,7 +43,7 @@ const Footer = () => {
               <span className="text-[24px]">
                 <Loc />
               </span>
-              <p>Plot 07, Sector Pi-1, Greater Noida, UP-201306</p>
+              <p>Plot 07, Sector Pi-1, Greater Noida,<br />UP-201306</p>
             </div>
             <div className="flex items-center gap-[8px]">
               <span className="text-[24px]">
@@ -63,22 +63,24 @@ const Footer = () => {
               </span>
               <p>www.northwindsanctuary.com</p>
             </div>
+            <div className="flex item-center pl-[8px] gap-[8px]">
+              <p>RERA No: UPRERAPRJ798312/05/2025</p>
+            </div>
           </div>
         </div>
       </div>
 
       <div className="flex flex-col items-center gap-4 max-md:absolute bottom-10 left-1/2 max-md:-translate-x-1/2 z-20">
         <div className="flex flex-wrap max-sm:flex-col text-center justify-center gap-[24px] text-white text-[16px] uppercase tracking-wider">
-          <a href="#" className="hover:text-gray-300 transition-colors">
-            RERA No: UPRERAPRJ798312/05/2025
-          </a>
+          
+          
           <a href="#" className="hover:text-gray-300 transition-colors">
             PRIVACY POLICY
           </a>
           <a href="#" className="hover:text-gray-300 transition-colors">
             DOWNLOAD BROCHURE
           </a>
-          <a href="#" className="hover:text-gray-300 transition-colors">
+          <a href="⁠https://www.facebook.com/people/North-Wind-Estates/61576002300546/" target="_blank" className="hover:text-gray-300 transition-colors">
             FACEBOOK
           </a>
           <a href="https://www.instagram.com/northwind.estates" target="_blank" className="hover:text-gray-300 transition-colors">
@@ -89,8 +91,9 @@ const Footer = () => {
           </a>
         </div>
 
-        <div className="text-white text-[12px] text-center">
+        <div className="text-white text-[12px] text-center gap-[10px]">
           <p>all rights reserved © northwindestates2025</p>
+          <p>designed and developed by loon design</p>
         </div>
       </div>
 

@@ -11,12 +11,12 @@ const RareLiving = () => {
   return (
     <div
       style={{
-        maskImage: "linear-gradient(to bottom, transparent, black 9%)",
+        maskImage: "linear-gradient(to bottom, transparent, black 10%)",
         WebkitMaskImage: "linear-gradient(to bottom, transparent, black 20%)",
       }}
       className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg lg:absolute -bottom-5`}
     >
-      <div className="font-boskaMedium selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
+      <div className="font-boskaMedium  selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
         your rare living.
       </div>
 

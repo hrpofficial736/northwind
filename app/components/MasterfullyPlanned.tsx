@@ -101,19 +101,19 @@ const MasterfullyPlanned = () => {
           }
              
           }
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-secondary/80 duration-20 ${
             manropeFont.className
-          }  bg-secondary text-primary`
+          }  bg-secondary/90 text-primary`
           }
             
         />
         <SecondaryButton
           onTap={() =>{
              setClicked(!clicked)
-             window.open("/assets/certificates/towerc.pdf")
+             window.open("/assets/certificates/masterPlan.pdf")
           }}
           text="Master plan"
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px]   hover:bg-amber-200/20 duration-200  lg:text-[24px]  ${
             manropeFont.className
           } 
              bg-primary text-secondary
