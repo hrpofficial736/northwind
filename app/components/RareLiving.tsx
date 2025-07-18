@@ -24,9 +24,9 @@ const RareLiving = () => {
         <p
           className={`${manropeFont.className} text-[22px] lg:text-[35px] font-[400]`}
         >
-          Designed for serenity, privacy, and
+          Designed for serenity, privacy, and open perspectives.
           <br className="max-lg:hidden" />
-          open perspectives.
+          
         </p>
 
         <div className="max-sm:flex max-sm:flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-[35px] lg:w-[60%] max-sm:justify-items-center mt-[32px] max-sm:mt-[48px]">

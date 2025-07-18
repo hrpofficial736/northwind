@@ -16,32 +16,37 @@ const MasterfullyPlanned = () => {
     map: string;
   }> = [
     {
-      name: "1. Arrival Zone",
-      map: maps[0],
+      name: "View Master Plan",
+      map: maps[0]
     },
+
     {
-      name: "2. Recreational Zone",
+      name: "1. Arrival Zone",
       map: maps[1],
     },
     {
-      name: "3. Active Zone",
+      name: "2. Recreational Zone",
       map: maps[2],
     },
     {
-      name: "4. Fun & Entertainment",
+      name: "3. Active Zone",
       map: maps[3],
     },
     {
-      name: "5. Sports Zone",
+      name: "4. Fun & Entertainment",
       map: maps[4],
     },
     {
-      name: "6. Serenity Walk",
+      name: "5. Sports Zone",
       map: maps[5],
     },
     {
-      name: "7. Under Serenity Walk",
+      name: "6. Serenity Walk",
       map: maps[6],
+    },
+    {
+      name: "7. Under Serenity Walk",
+      map: maps[7],
     },
   ];
 

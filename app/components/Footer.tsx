@@ -70,7 +70,7 @@ const Footer = () => {
       <div className="flex flex-col items-center gap-4 max-md:absolute bottom-10 left-1/2 max-md:-translate-x-1/2 z-20">
         <div className="flex flex-wrap max-sm:flex-col text-center justify-center gap-[24px] text-white text-[16px] uppercase tracking-wider">
           <a href="#" className="hover:text-gray-300 transition-colors">
-            DISCLAIMER
+            RERA No: UPRERAPRJ798312/05/2025
           </a>
           <a href="#" className="hover:text-gray-300 transition-colors">
             PRIVACY POLICY
