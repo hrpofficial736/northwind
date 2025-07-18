@@ -25,22 +25,22 @@ const AmaltasTower = () => {
   const towersInfo: TowerProps[] = [
     {
       name: "cedar tower",
-      description: `Sanctuary comes to life under the creative hand of Mr. Vishal Sharma, Confluence's lead architect.
-        Widely admired for merging classic beauty with modern green technology.`,
+      description: `Bordering the calmest corners of the development, Cedar offers intelligently designed homes for modern families. With smart space usage, green views, and sustainability at its core, Cedar is a perfect fit for those who believe that less impact can still mean more life.`,
+
+
       image: "/assets/cedar.png",
       pdfLink:"assets/certificates/towerA.pdf",
     },
     {
       name: "banyan tower",
-      description: `Sanctuary comes to life under the creative hand of Mr. Vishal Sharma, Confluence's lead architect.
-        Widely admired for merging classic beauty with modern green technology.`,
+      description:`At the heart of the community stands Banyan, rooted in the principles of balance and strength. With seamless integration into the surrounding landscape, these spacious residences promote energy efficiency and conscious urban living, all while maintaining elegance.`,
       image: "/assets/banyan.png",
       pdfLink:"assets/certificates/towerb.pdf",
     },
     {
       name: "amaltas tower",
-      description: `Sanctuary comes to life under the creative hand of Mr. Vishal Sharma, Confluence's lead architect.
-        Widely admired for merging classic beauty with modern green technology.`,
+      description:` Perched proudly with sweeping views of the green spine, Amaltas is for those who demand space, serenity, and sustainability. Designed for maximum natural light, cross ventilation, and premium comfort, these homes blend responsible architecture with indulgent living.`,
+
       image: "/assets/amaltas.png",
       pdfLink:"assets/certificates/towerc.pdf",
     },
