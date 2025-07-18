@@ -4,10 +4,12 @@ import Aeroplane from "@/components/icons/Aeroplane";
 import Location from "@/components/icons/Location";
 import Medical from "@/components/icons/Medical";
 import Train from "@/components/icons/Train";
+import { useSignUpStore } from "@/stores/useSignUpStore";
 import { manropeFont } from "@/utils/fonts";
 import React from "react";
 
 const RareLiving = () => {
+  const { status } = useSignUpStore();
   return (
     <div
       style={{
@@ -144,7 +146,12 @@ const RareLiving = () => {
           <PrimaryButton
             text="Download Brochure"
             onTap={() => {
-              window.open("/assets/certificates/Brochure.pdf", "blank");
+              if (status) {
+                window.open("/assets/certificates/Brochure.pdf", "blank");
+              }
+              else {
+                alert("Please first sign up for downloading brochure!")
+              }
             }}
             className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}
           />

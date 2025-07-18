@@ -12,6 +12,7 @@ import { manropeFont } from "@/utils/fonts";
 import React from "react";
 import { motion } from "framer-motion";
 import { useMotionVariants } from "@/utils/motionVariant";
+import FullImage from "./FullImage";
 
 const SustainablyDesigned = () => {
   const { initialVariant, viewVariant, viewPortVariant, transitionVariant } = useMotionVariants();
@@ -94,8 +95,7 @@ const SustainablyDesigned = () => {
         />
         </div>
 
-
-
+    
     </div>
   );
 };

@@ -5,10 +5,12 @@ import PrimaryButton from "@/components/buttons/PrimaryButton";
 import ClickedRadio from "@/components/icons/ClickedRadio";
 import UnclickedRadio from "@/components/icons/UnclickedRadio";
 import TextField from "@/components/TextField";
+import { useSignUpStore } from "@/stores/useSignUpStore";
 import { manropeFont } from "@/utils/fonts";
 import React, { useState } from "react";
 
 const Form = () => {
+  const { setStatus } = useSignUpStore();
   const [formData, setFormData] = useState<FormActionProps>({
     name: "",
     mobile: "",
@@ -42,8 +44,12 @@ const Form = () => {
       return;
     }
 
+
     const responseFromAction = await submitForm(formData);
-    if (responseFromAction) alert("Form submitted successfully!")
+    if (responseFromAction) {
+      alert("Form submitted successfully!");
+      setStatus();
+    }
   }
 
   return (

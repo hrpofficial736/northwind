@@ -1,8 +1,6 @@
 "use client";
 
-import Architect from "@/components/card/Architect";
 import { manropeFont } from "@/utils/fonts";
-import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import { useMotionVariants } from "@/utils/motionVariant";
