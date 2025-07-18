@@ -8,12 +8,13 @@ import { useSignUpStore } from "@/stores/useSignUpStore";
 import { manropeFont } from "@/utils/fonts";
 import React from "react";
 
+
 const RareLiving = () => {
   const { status } = useSignUpStore();
   return (
     <div
       style={{
-        maskImage: "linear-gradient(to bottom, transparent, black 10%)",
+        maskImage: "linear-gradient(to bottom, transparent, black 12%)",
         WebkitMaskImage: "linear-gradient(to bottom, transparent, black 20%)",
       }}
       className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg lg:absolute -bottom-5`}
