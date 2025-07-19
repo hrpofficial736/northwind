@@ -41,21 +41,23 @@ const ConstructionUpdates = ({
 
   const listOfUpdates = [
     [
-      "Tower 1: Structure work in Tower A completed",
-      "Tower 1: Landscape & pool deck work ongoing",
-      "Tower 1: Basement mechanical work started",
+      " Raft work completed",
+      " Basement coloumns completed",
+      " Retaining wall completed ",
+
     ],
 
     [
-      "Tower 2: Structure work in Tower A completed",
-      "Tower 2: Landscape & pool deck work ongoing",
-      "Tower 2: Basement mechanical work started",
+      " Raft work completed",
+      " Retaining wall in progressRetaining wall in progress",
+      " Column work in progress",
+,
     ],
 
     [
-      "Tower 3: Structure work in Tower A completed",
-      "Tower 3: Landscape & pool deck work ongoing",
-      "Tower 3: Basement mechanical work started",
+      " raft work completed",
+      " Retaining wall in progressRetaining wall in progress",
+      " basement slab work in progress",
     ],
   ];
 

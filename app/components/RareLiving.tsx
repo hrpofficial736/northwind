@@ -151,7 +151,8 @@ const RareLiving = () => {
                 window.open("/assets/certificates/Brochure.pdf", "blank");
               }
               else {
-                alert("Please first sign up for downloading brochure!")
+                alert("Please fill the form before downloading brochure!")
+                document.getElementById("connect-with-us")?.scrollIntoView({behavior:"smooth"})
               }
             }}
             className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}

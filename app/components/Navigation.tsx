@@ -2,7 +2,7 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import Cross from "@/components/icons/Cross";
-import React, { RefObject, useEffect } from "react";
+import React, { useEffect } from "react";     //we have removed useref from here
 
 const Navigation = ({
   show,

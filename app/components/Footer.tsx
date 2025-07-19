@@ -80,7 +80,7 @@ const Footer = () => {
           <a href="#" className="hover:text-gray-300 transition-colors">
             DOWNLOAD BROCHURE
           </a>
-          <a href="⁠https://www.facebook.com/people/North-Wind-Estates/61576002300546/" target="_blank" className="hover:text-gray-300 transition-colors">
+          <a href="https://www.facebook.com/people/North-Wind-Estates/61576002300546/" target="_blank" className="hover:text-gray-300 transition-colors">
             FACEBOOK
           </a>
           <a href="https://www.instagram.com/northwind.estates" target="_blank" className="hover:text-gray-300 transition-colors">
