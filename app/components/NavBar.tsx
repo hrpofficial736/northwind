@@ -2,7 +2,7 @@
 
 import PrimaryButton from '@/components/buttons/PrimaryButton';
 import HamBurger from '@/components/icons/HamBurger';
-import React, { RefObject, useState } from 'react';
+import React, { useState } from 'react';
 import Navigation from './Navigation';
 import { useDisclaimerStore } from '@/stores/useDisclaimerStore';
 
