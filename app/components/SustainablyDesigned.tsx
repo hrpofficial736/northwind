@@ -12,10 +12,8 @@ import { manropeFont } from "@/utils/fonts";
 import React from "react";
 import { motion } from "framer-motion";
 import { useMotionVariants } from "@/utils/motionVariant";
-import FullImage from "./FullImage";
 
 
-import useIsMobile from "@/hooks/useIsMobile";
 import { useState } from "react";
 import FullCertificate from "./FullCertificate";
 

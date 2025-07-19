@@ -8,17 +8,13 @@ import useIsMobile from "@/hooks/useIsMobile";
 import { AnimatePresence, motion } from "framer-motion";
 import { manropeFont } from "@/utils/fonts";
 import Image from "next/image";
-import React, { RefObject, useState } from "react";
+import React, { useState } from "react";
 import { useMotionVariants } from "@/utils/motionVariant";
 import { useFullImageStore } from "@/stores/useFullImageStore";
 import FullImage from "./FullImage";
 import WatchSite from "./WatchSite";
 
-const ConstructionUpdates = ({
-  ref,
-}: {
-  ref: RefObject<HTMLDivElement | null>;
-}) => {
+const ConstructionUpdates = () => {
   const { isMobile } = useIsMobile(1024);       //custom hook without store
   const { setDisplay, display } = useFullImageStore(); //custom hook with store
   const { initialVariant, viewVariant, transitionVariant, viewPortVariant } =
