@@ -46,7 +46,7 @@ const AmaltasTower = () => {
   ];
 
   return (
-    <section className="bg-primary p-[64px_24px] lg:p-[120px_36px] relative w-full z-[9999] flex flex-col">
+    <section className="bg-gradient-to-b from-white/10 to-primary p-[64px_24px] lg:p-[120px_36px] relative w-full z-[9999] flex flex-col backdrop-blur-xl">
       <div
         className={`f-c-row gap-[20px] sm:gap-[70px] lg:gap-[120px] ${manropeFont.className}`}
       >

@@ -9,11 +9,20 @@ import { useMotionVariants } from "@/utils/motionVariant";
 import { useDisclaimerStore } from "@/stores/useDisclaimerStore";
 
 const Hero = () => {
-  const { initialVariant, viewVariant, transitionVariant, viewPortVariant } = useMotionVariants();
+  const { initialVariant, viewVariant, transitionVariant, viewPortVariant } =
+    useMotionVariants();
   const { show } = useDisclaimerStore();
   return (
-    <section className={`w-full lg:h-[375vh] bg-secondary relative ${(show) && "blur-2xl"}`}>
-      <div className="sticky top-0 h-[100vh] w-full z-0">
+    <section
+    
+      className={`w-full lg:h-[375vh] bg-secondary relative ${
+        show && "blur-2xl"
+      }`}
+    >
+      <div
+        className="sticky top-0 h-[100vh] w-full z-0"
+        
+      >
         <video
           className="object-cover h-full w-full"
           muted
@@ -28,7 +37,13 @@ const Hero = () => {
         <div className="self-center">
           <Logo />
         </div>
-        <motion.div initial={initialVariant} whileInView={viewVariant} transition={transitionVariant} viewport={viewPortVariant} className="self-start ml-10">
+        <motion.div
+          initial={initialVariant}
+          whileInView={viewVariant}
+          transition={transitionVariant}
+          viewport={viewPortVariant}
+          className="self-start ml-10"
+        >
           <h1
             className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text`}
           >
@@ -39,7 +54,13 @@ const Hero = () => {
           </h1>
         </motion.div>
 
-        <motion.div initial={initialVariant} whileInView={viewVariant} transition={transitionVariant} viewport={viewPortVariant} className="text-right self-end ml-10">
+        <motion.div
+          initial={initialVariant}
+          whileInView={viewVariant}
+          transition={transitionVariant}
+          viewport={viewPortVariant}
+          className="text-right self-end ml-10"
+        >
           <h1
             className={`${manropeFont.className} text-[20px] custom580:text-[30px] lg:text-[42px] drop-shadow-[0_2px_2px_rgba(0,0,0,0.25)] text-text mr-[50px] custom580:mr-[50px] lg:mr-[180px]`}
           >

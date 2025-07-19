@@ -29,7 +29,7 @@ const FullCertificate = ({
           exit={{
             opacity: 0,
           }}
-          className="bg-secondary w-[90vw] h-[60vh] lg:h-[110vh] blur-0 backdrop-brightness-200 outline-2 outline-border p-[10px_20px] rounded-2xl flex flex-col absolute z-[9999999] left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
+          className="bg-secondary w-[90vw] h-[40vh] lg:h-[110vh] blur-0 backdrop-brightness-200 p-[15px_7px] outline-2 outline-border rounded-2xl flex flex-col absolute z-[9999999] left-1/2 top-1/2 -translate-y-1/2 -translate-x-1/2"
         >
           <div
             onClick={() => setDisplay(false)}
@@ -42,7 +42,7 @@ const FullCertificate = ({
             style={{
               backgroundImage: `url("/assets/certificate.jpg")`,
             }}
-            className="w-[90%] h-[90%] rounded-xl bg-cover bg-center self-center mt-[20px]"
+            className="w-[90%] h-[90%] lg:h-[90%] rounded-xl bg-cover bg-center self-center mt-[20px]"
           />
         </motion.div>
       )}
