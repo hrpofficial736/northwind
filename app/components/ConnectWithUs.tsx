@@ -24,7 +24,7 @@ const ConnectWithUs = () => {
           viewport={viewPortVariant}
           className={`${manropeFont.className} text-[24px] lg:text-[32px] text-primary mt-[12px]`}
         >
-          Let's Talk About Your<br className="max-lg:hidden" /> Rare Living Address
+          Let&apos;s Talk About Your<br className="max-lg:hidden" /> Rare Living Address
         </motion.p>
       </div>
 

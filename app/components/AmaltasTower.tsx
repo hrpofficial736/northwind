@@ -40,9 +40,9 @@ const AmaltasTower = () => {
   ];
 
   const towers = [
-    <TowerComponent towerInfo={towersInfo[0]} />,
-    <TowerComponent towerInfo={towersInfo[1]} />,
-    <TowerComponent towerInfo={towersInfo[2]} />,
+    <TowerComponent towerInfo={towersInfo[0]} key={towersInfo[0].name} />,
+    <TowerComponent towerInfo={towersInfo[1]} key={towersInfo[0].name} />,
+    <TowerComponent towerInfo={towersInfo[2]} key={towersInfo[0].name} />,
   ];
 
   return (

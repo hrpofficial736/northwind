@@ -35,7 +35,7 @@ const AboutArchitect = () => {
           className={`mt-[48px] ${manropeFont.className} text-[20px] lg:text-[30px] text-primary font-[300]`}
         >
           Sanctuary comes to life under the creative hand of Mr. Vishal Sharma,
-          Confluence's lead architect. Widely admired for merging classic beauty
+          Confluence&apos;s lead architect. Widely admired for merging classic beauty
           with modern green technology, he designs with a rare feel for space,
           light, and the land that holds them.{" "}
         </motion.p>
