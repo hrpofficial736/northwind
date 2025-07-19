@@ -29,7 +29,7 @@ const Hero = () => {
           autoPlay
           loop
           playsInline
-          src={"/assets/videos/herosectionvideo.mp4"}
+          src={"/assets/videos/herosectionvideo.webm"}
         />
       </div>
 
