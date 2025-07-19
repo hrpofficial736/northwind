@@ -6,7 +6,7 @@ import React, { RefObject, useState } from 'react';
 import Navigation from './Navigation';
 import { useDisclaimerStore } from '@/stores/useDisclaimerStore';
 
-const NavBar = ({ ref }: { ref: RefObject<HTMLDivElement | null>}) => {
+const NavBar = () => {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
   const { show } = useDisclaimerStore();
   return (
@@ -21,9 +21,9 @@ const NavBar = ({ ref }: { ref: RefObject<HTMLDivElement | null>}) => {
       
     </div>
 
-    <Navigation ref={ref} show={showNavigation} setShow={setShowNavigation} />
+    <Navigation  show={showNavigation} setShow={setShowNavigation} />
     </div>
-  )
+  )                //    <Navigation ref={ref} show={showNavigation} setShow={setShowNavigation} />
 }
 
 export default NavBar

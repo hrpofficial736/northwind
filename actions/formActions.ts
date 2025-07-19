@@ -18,11 +18,12 @@ export async function submitForm(formData: FormActionProps) {
   form.append("email", email);
   form.append("isSigned", `${isSigned}`);
   
-
+  console.log(mobile) 
+  console.log(formData) 
   const response = await fetch(process.env.GOOGLE_APP_SCRIPT_URL!, {
     method: "POST",
     headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: form.toString(),
+    body:JSON.stringify(form),
   });
 
 
