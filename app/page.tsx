@@ -27,7 +27,7 @@ export default function Home() {
     <div ref={ref} className={`w-screen h-screen overflow-x-hidden relative ${show && "overflow-hidden"}`}>
       <NavBar />
       <Hero />
-      <AmaltasTower />
+     
       <ImageGallery />
       <MasterfullyPlanned />
       <Disclaimer />
