@@ -72,7 +72,7 @@ const ConstructionUpdates = () => {
           whileInView={viewVariant}
           transition={transitionVariant}
           viewport={viewPortVariant}
-          className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none"
+          className="font-boskaMedium text-secondary text-[64px] lg:text-[96px] z-20 leading-none"
         >
           construction updates
         </motion.h1>
@@ -81,7 +81,7 @@ const ConstructionUpdates = () => {
           whileInView={viewVariant}
           transition={transitionVariant}
           viewport={viewPortVariant}
-          className={`${manropeFont.className} text-[24px] lg:text-[32px] text-primary mt-[12px]`}
+          className={`${manropeFont.className} text-[24px] lg:text-[32px] text-secondary mt-[12px]`}
         >
           Stay updated on our progress
         </motion.p>
@@ -183,7 +183,7 @@ const ConstructionUpdates = () => {
                     setCurrent(0);
                     setShow(false);
                   }}
-                  className="hover:bg-input/80 w-full f-c-row p-2 cursor-pointer rounded-t-2xl"
+                  className="hover:bg-input/80 w-full max-md:active:bg-input/50 f-c-row p-2 cursor-pointer rounded-t-2xl"
                 >
                   Amaltas
                 </div>
@@ -192,7 +192,7 @@ const ConstructionUpdates = () => {
                     setCurrent(1);
                     setShow(false);
                   }}
-                  className="hover:bg-input/80 w-full f-c-row p-2 cursor-pointer"
+                  className="hover:bg-input/80 w-full  max-md:active:bg-input/50 f-c-row p-2 cursor-pointer"
                 >
                   Banyan
                 </div>
@@ -201,7 +201,7 @@ const ConstructionUpdates = () => {
                     setCurrent(2);
                     setShow(false);
                   }}
-                  className="hover:bg-input/80 w-full f-c-row p-2 cursor-pointer rounded-b-2xl"
+                  className="hover:bg-input/80 w-full  max-md:active:bg-input/50 f-c-row p-2 cursor-pointer rounded-b-2xl"
                 >
                   Cedar
                 </div>
@@ -236,7 +236,7 @@ const ConstructionUpdates = () => {
           onTap={()=>{
             setShowSiteVideo(true)
           }}
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} text-primary bg-transparent border
+          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} text-primary   hover:bg-primary/80 durantion:200 bg-transparent border
            border-primary`}
         />
       </div>

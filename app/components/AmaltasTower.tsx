@@ -20,19 +20,18 @@ const AmaltasTower = () => {
       name: "cedar tower",
       description: `Bordering the calmest corners of the development, Cedar offers intelligently designed homes for modern families. With smart space usage, green views, and sustainability at its core, Cedar is a perfect fit for those who believe that less impact can still mean more life.`,
 
-
       image: "/assets/cedar.png",
       pdfLink: "assets/certificates/towerA.pdf",
     },
     {
       name: "banyan tower",
-      description:`At the heart of the community stands Banyan, rooted in the principles of balance and strength. With seamless integration into the surrounding landscape, these spacious residences promote energy efficiency and conscious urban living, all while maintaining elegance.`,
+      description: `At the heart of the community stands Banyan, rooted in the principles of balance and strength. With seamless integration into the surrounding landscape, these spacious residences promote energy efficiency and conscious urban living, all while maintaining elegance.`,
       image: "/assets/banyan.png",
       pdfLink: "assets/certificates/towerb.pdf",
     },
     {
       name: "amaltas tower",
-      description:` Perched proudly with sweeping views of the green spine, Amaltas is for those who demand space, serenity, and sustainability. Designed for maximum natural light, cross ventilation, and premium comfort, these homes blend responsible architecture with indulgent living.`,
+      description: ` Perched proudly with sweeping views of the green spine, Amaltas is for those who demand space, serenity, and sustainability. Designed for maximum natural light, cross ventilation, and premium comfort, these homes blend responsible architecture with indulgent living.`,
 
       image: "/assets/amaltas.png",
       pdfLink: "assets/certificates/towerc.pdf",
@@ -46,7 +45,7 @@ const AmaltasTower = () => {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-white/10 to-primary p-[64px_24px] lg:p-[120px_36px] relative w-full z-[9999] flex flex-col backdrop-blur-xl">
+    <section className="bg-gradient-to-b from-submit/40 to-primary p-[64px_24px] lg:p-[120px_36px] relative w-full z-[9999] flex flex-col backdrop-blur-xl">
       <div
         className={`f-c-row gap-[20px] sm:gap-[70px] lg:gap-[120px] ${manropeFont.className}`}
       >
