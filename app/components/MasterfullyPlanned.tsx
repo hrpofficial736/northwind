@@ -56,7 +56,7 @@ const MasterfullyPlanned = () => {
   return (
     <div className="w-full lg:h-[1194px] bg-primary relative p-[64px_16px] lg:p-[120px_36px] gap-[44px] flex flex-col">
       <motion.h1 initial={initialVariant} whileInView={viewVariant} viewport={viewPortVariant} transition={transitionVariant} className={"font-boskaMedium text-[64px] lg:text-[96px] text-secondary"}>
-        masterfully planned
+        Masterfully Planned
       </motion.h1>
 
       {/* Map Section */}
