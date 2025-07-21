@@ -2,7 +2,6 @@
 
 import { useEffect, useRef } from "react";
 import AboutArchitect from "./components/AboutArchitect";
-import AmaltasTower from "./components/AmaltasTower";
 import ConnectWithUs from "./components/ConnectWithUs";
 import ConstructionUpdates from "./components/ConstructionUpdates";
 import Hero from "./components/Hero";
