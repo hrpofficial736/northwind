@@ -1,10 +1,14 @@
+import useIsMobile from "@/hooks/useIsMobile";
 import React from "react";
 
+
 const Logo = () => {
+  const {isMobile}=useIsMobile()
+  
   return (
     <svg
-      width="78"
-      height="72"
+      width={isMobile ? "50":"70"}
+      height={isMobile ? "50": "70"}
       viewBox="0 0 78 72"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

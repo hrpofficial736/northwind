@@ -14,15 +14,15 @@ const ConnectWithUs = () => {
         <motion.h1 initial={initialVariant}
           whileInView={viewVariant}
           transition={transitionVariant}
-          viewport={viewPortVariant} className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none">
-          connect<br /> with us
+          viewport={viewPortVariant} className="font-boskaMedium text-primary text-[48px] lg:text-[96px] z-20 leading-none">
+          Connect<br /> With Us
         </motion.h1>
         <motion.p
         initial={initialVariant}
           whileInView={viewVariant}
           transition={transitionVariant}
           viewport={viewPortVariant}
-          className={`${manropeFont.className} text-[24px] lg:text-[32px] text-primary mt-[12px]`}
+          className={`${manropeFont.className} text-[18px] lg:text-[32px] text-primary mt-[12px]`}
         >
           Let&apos;s Talk About Your<br className="max-lg:hidden" /> Rare Living Address
         </motion.p>

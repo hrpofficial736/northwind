@@ -17,12 +17,14 @@ export type TextFieldProps = {
 
 const TextField = (props: TextFieldProps) => {
   return (
-    <div className={clsx("flex flex-col gap-1", props.className)}>
-      <label className={`${manropeFont.className} text-primary text-[20px]`}>{props.label}</label>
+    <div className={clsx("flex flex-col items-center gap-1 w-full", props.className)}>
+      <div className={`flex flex-col w-[90%] `}>
+       <label className={`${manropeFont.className}  text-primary text-[18px]`}>{props.label}</label>
+      
       <input
       maxLength={props.maxLength}
       
-        className={`px-[20px] py-[8px] rounded-[99px] outline-2 outline-border bg-input text-primary ${manropeFont.className} text-[20px]`}
+        className={`px-[20px] py-[8px] max-md:max-w-full  rounded-[99px] outline-2 outline-border bg-input text-primary ${manropeFont.className} text-[20px]`}
         value={props.value}
         type={props.type}
         required
@@ -30,6 +32,7 @@ const TextField = (props: TextFieldProps) => {
         onChange={props.onChanged}
         placeholder={props.placeholder}
       />
+      </div>
     </div>
   );
 };

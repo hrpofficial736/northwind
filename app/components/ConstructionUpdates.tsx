@@ -72,7 +72,7 @@ const ConstructionUpdates = () => {
           whileInView={viewVariant}
           transition={transitionVariant}
           viewport={viewPortVariant}
-          className="font-boskaMedium text-secondary text-[64px] lg:text-[96px] z-20 leading-none"
+          className="font-boskaMedium text-secondary text-[48px] lg:text-[96px] z-20 leading-none"
         >
           construction updates
         </motion.h1>
@@ -227,7 +227,7 @@ const ConstructionUpdates = () => {
               .getElementById("connect-with-us")
               ?.scrollIntoView({ behavior: "smooth" });
           }}
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-primary/80 durantion:200 ${manropeFont.className} bg-primary text-secondary
+          className={`p-[20px_40px] max-lg:w-[90%] lg:p-[20px_40px] text-[16px] lg:text-[24px] hover:bg-primary/80 durantion:200 ${manropeFont.className} bg-primary text-secondary
           `}
         />
         <SecondaryButton
@@ -236,7 +236,7 @@ const ConstructionUpdates = () => {
           onTap={()=>{
             setShowSiteVideo(true)
           }}
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} text-primary   hover:bg-primary/80 durantion:200 bg-transparent border
+          className={`p-[20px_40px] max-lg:w-[90%] lg:p-[20px_40px] text-[16px] lg:text-[24px] ${manropeFont.className} text-primary   hover:bg-primary/80 durantion:200 bg-transparent border
            border-primary`}
         />
       </div>

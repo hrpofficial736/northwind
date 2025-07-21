@@ -34,10 +34,10 @@ const ImageGallery = () => {
           whileInView={viewVariant}
           viewport={viewPortVariant}
           transition={transitionVariant}
-          className="font-boskaMedium text-secondary text-[64px] leading-[120%] lg:text-[96px]"
+          className="font-boskaMedium text-secondary text-[48px] leading-[120%] lg:text-[96px]"
         >
-          take a look
-          <br /> inside sanctuary
+          Take A look
+          <br /> Inside Sanctuary
         </motion.h1>
       </div>
 

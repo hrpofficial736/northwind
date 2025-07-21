@@ -19,8 +19,8 @@ const RareLiving = () => {
       }}
       className={`z-10 w-full p-[64px_24px] lg:p-[88px_40px] flex flex-col backdrop-blur-lg lg:absolute -bottom-5`}
     >
-      <div className="font-boskaMedium  selection:bg-primary selection:text-secondary text-primary text-[80px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
-        your rare living.
+      <div className="font-boskaMedium  selection:bg-primary selection:text-secondary text-primary text-[68px] lg:text-[128px] leading-[130%] xl:text-[180px] ">
+        Your Rare Living.
       </div>
 
       <div className="flex justify-center lg:gap-60 w-full text-primary max-lg:flex-col mx-auto pb-10 mt-[36px]">
@@ -32,42 +32,42 @@ const RareLiving = () => {
           
         </p>
 
-        <div className="max-sm:flex max-sm:flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-[35px] lg:w-[60%] max-sm:justify-items-center mt-[32px] max-sm:mt-[48px]">
+        <div className="max-sm:flex max-sm:flex-col sm:grid sm:grid-rows-2 sm:grid-cols-2 gap-[35px] lg:w-[60%] items-center max-sm:justify-items-center mt-[32px] max-sm:mt-[48px]">
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border lg:py-0 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[35px] rounded-[11.65px] outline-[1.46px] outline-border w-[80%] py-10 lg:py-20 text-center`}
           >
             4.5 acres
-            <p className={`text-[24px] ${manropeFont.className}`}>
+            <p className={`text-[16px] ${manropeFont.className}`}>
               TOTAL
               <br />
               LAND AREA
             </p>
           </div>
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[35px] rounded-[11.65px] outline-[1.46px] outline-border w-[80%] py-10 lg:py-20 text-center`}
           >
             185
-            <p className={`text-[24px] ${manropeFont.className}`}>
+            <p className={`text-[16px] ${manropeFont.className}`}>
               ULTRA
               <br />
               PREMIUM UNITS
             </p>
           </div>
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[35px] rounded-[11.65px] outline-[1.46px] outline-border w-[80%] py-10 lg:py-20 text-center`}
           >
             70%
-            <p className={`text-[24px] ${manropeFont.className}`}>
+            <p className={`text-[16px] ${manropeFont.className}`}>
               LANDSCAPE
               <br />
               GREENS
             </p>
           </div>
           <div
-            className={`font-boskaMedium text-primary f-c-col text-[48px] rounded-[11.65px] outline-[1.46px] outline-border w-full py-10 lg:py-20 text-center`}
+            className={`font-boskaMedium text-primary f-c-col text-[35px] rounded-[11.65px] outline-[1.46px] outline-border w-[80%] py-10 lg:py-20 text-center`}
           >
             IGBC
-            <p className={`text-[24px] ${manropeFont.className}`}>
+            <p className={`text-[16px] ${manropeFont.className}`}>
               PLATINUM
               <br />
               RATED
@@ -155,7 +155,7 @@ const RareLiving = () => {
                 document.getElementById("connect-with-us")?.scrollIntoView({behavior:"smooth"})
               }
             }}
-            className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-primary/90 text-black`}
+            className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/60 duration-200 bg-secondary/70 text-primary`}
           />
           <SecondaryButton
             text="View Location"
@@ -165,7 +165,7 @@ const RareLiving = () => {
                 "blank"
               );
             }}
-            className={`p-[20px_40px] max-lg:w-full text-[20px] lg:text-[24px] ${manropeFont.className} hover:bg-white/10 duration-200 text-primary bg-transparent border-primary`}
+            className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-white/10 duration-200 text-primary bg-transparent border-primary`}
           />
         </div>
       </div>

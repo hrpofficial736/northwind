@@ -57,8 +57,8 @@ const MasterfullyPlanned = () => {
 
   return (
     <div className="w-full lg:h-[1194px] bg-primary relative p-[64px_16px] lg:p-[120px_36px] gap-[44px] flex flex-col">
-      <motion.h1 initial={initialVariant} whileInView={viewVariant} viewport={viewPortVariant} transition={transitionVariant} className={"font-boskaMedium text-[64px] lg:text-[96px] text-secondary"}>
-        masterfully planned
+      <motion.h1 initial={initialVariant} whileInView={viewVariant} viewport={viewPortVariant} transition={transitionVariant} className={"font-boskaMedium text-[48px] lg:text-[96px] text-secondary"}>
+        Masterfully Planned
       </motion.h1>
 
       {/* Map Section */}
@@ -101,7 +101,7 @@ const MasterfullyPlanned = () => {
           }
              
           }
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] hover:bg-secondary/80 duration-20 ${
+          className={`p-[20px_40px] max-lg:w-[90%] lg:p-[20px_40px] text-[16px] lg:text-[24px] hover:bg-secondary/80 duration-20 ${
             manropeFont.className
           }  bg-secondary/90 text-primary`
           }
@@ -113,7 +113,7 @@ const MasterfullyPlanned = () => {
              window.open("/assets/certificates/masterPlan.pdf")
           }}
           text="Master plan"
-          className={`p-[20px_40px] max-lg:w-full lg:p-[20px_40px] text-[20px]   hover:bg-amber-200/20 duration-200  lg:text-[24px]  ${
+          className={`p-[20px_40px] max-lg:w-[90%] lg:p-[20px_40px] text-[16px]  hover:bg-amber-200/20 duration-200  lg:text-[24px]  ${
             manropeFont.className
           } 
              bg-primary text-secondary
