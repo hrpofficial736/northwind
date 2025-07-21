@@ -74,7 +74,7 @@ const ConstructionUpdates = () => {
           viewport={viewPortVariant}
           className="font-boskaMedium text-secondary text-[48px] lg:text-[96px] z-20 leading-none"
         >
-          construction updates
+          Construction updates
         </motion.h1>
         <motion.p
           initial={initialVariant}
