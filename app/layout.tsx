@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
+import Logo from "@/components/Logo";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -30,17 +30,9 @@ export const metadata: Metadata = {
   description: "Northwind Sanctuary is a premium real estate development that integrates sustainable living with abundant greenery and natural landscapes, offering residents a harmonious blend of modern amenities and environmental conservation.",
   keywords: "Northwind Sanctuary, sustainable real estate, green living, premium development, eco-friendly homes, natural landscapes, environmental conservation, modern amenities, green spaces, sustainable community",
   authors: [{ name: "Northwind Sanctuary Development" }],
-  openGraph: {
-    title: "Northwind Sanctuary - Premium Sustainable Real Estate Development",
-    description: "Discover Northwind Sanctuary, where sustainable living meets luxury. Premium real estate development with abundant greenery and natural landscapes.",
-    type: "website",
-    locale: "en_US",
-    siteName: "Northwind Sanctuary",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Northwind Sanctuary - Premium Sustainable Real Estate Development",
-    description: "Premium real estate development integrating sustainable living with abundant greenery and natural landscapes.",
+  category: "Real Estate",
+  alternates: {
+    canonical: "https://www.northwindsanctuary.com",
   },
   robots: {
     index: true,
@@ -50,10 +42,30 @@ export const metadata: Metadata = {
       follow: true,
     },
   },
-  alternates: {
-    canonical: "https://www.northwindsanctuary.com",
+   
+  icons:["/favicon.svg"],
+  openGraph: {
+    title: "Northwind Sanctuary - Premium Sustainable Real Estate Development",
+    description: "Discover Northwind Sanctuary, where sustainable living meets luxury. Premium real estate development with abundant greenery and natural landscapes.",
+    type: "website",
+    locale: "en_US",
+    siteName: "Northwind Sanctuary",
+    url: "https://www.northwindsanctuary.com",
+    images: [
+      {
+        url: "/social-preview.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Northwind Sanctuary - Social Preview",
+      },
+    ],
   },
-  category: "Real Estate",
+  twitter: {
+    card: "summary_large_image",
+    title: "Northwind Sanctuary - Premium Sustainable Real Estate Development",
+    description: "Premium real estate development integrating sustainable living with abundant greenery and natural landscapes.",
+    images: ["/social-preview.jpg"],
+  },
 };
 
 export default function RootLayout({
