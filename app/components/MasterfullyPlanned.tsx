@@ -71,7 +71,7 @@ const MasterfullyPlanned = () => {
                   setCurrent(index);
                   setSelectedIndex(index);
                 }}
-                className={`p-[8px_12px] lg:p-[12px_30px] ${selectedIndex === index ? 'bg-secondary text-primary' : 'bg-transparent text-secondary'} ${index === 0 && "rounded-tl-[20px]"} ${index === 1 && "max-lg:rounded-tr-[20px]"} hover:bg-secondary/85 hover:text-primary cursor-pointer transition-all duration-200 lg:w-full flex justify-start border-b-1 border-r-1 max-lg:w-1/2 border-border ${manropeFont.className} font-[500] text-[14px] lg:text-[24px]`}
+                className={`p-[8px_12px] lg:p-[12px_30px] ${selectedIndex === index ? 'bg-secondary/85 text-primary' : 'bg-transparent text-secondary'} ${index === 0 && "rounded-tl-[20px]"} ${index === 1 && "max-lg:rounded-tr-[20px]"} hover:bg-secondary/85 hover:text-primary cursor-pointer transition-all duration-200 lg:w-full flex justify-start border-b-1 border-r-1 max-lg:w-1/2 border-border ${manropeFont.className} font-[500] text-[14px] lg:text-[24px]`}
                 style={{ 
                   WebkitTapHighlightColor: 'transparent',
                   WebkitTouchCallout: 'none',

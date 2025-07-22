@@ -25,15 +25,15 @@ const Disclaimer = () => {
             exit={{
                 opacity: 0
             }}
-        className="bg-secondary blur-0 backdrop-brightness-200 p-[20px_40px] lg:p-[40px_48px] rounded-2xl flex flex-col absolute z-[9999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+        className="bg-secondary max-md:w-[90%] p-[20px_18px] lg:p-[30px] rounded-2xl flex flex-col absolute z-[9999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
           <div
             onClick={() => setShow()}
-            className="self-start lg:self-end p-2 rounded-xl cursor-pointer"
+            className="self-start lg:self-end p-0 rounded-xl cursor-pointer"
           >
             <Cross />
           </div>
 
-          <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none max-lg:mt-[32px]">
+          <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none mt-[32px]">
             disclaimer
           </h1>
 

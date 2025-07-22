@@ -155,7 +155,7 @@ const RareLiving = () => {
                 document.getElementById("connect-with-us")?.scrollIntoView({behavior:"smooth"})
               }
             }}
-            className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/50 duration-200 bg-secondary/70 text-primary`}
+            className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/50 hover:text-secondary duration-200 bg-secondary/70 text-primary`}
           />
           <SecondaryButton
             text="View Location"
@@ -165,7 +165,7 @@ const RareLiving = () => {
                 "blank"
               );
             }}
-            className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className}  hover:bg-primary/50 duration-200 bg-secondary/70`}
+            className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className}  hover:bg-primary/50 hover:text-secondary duration-200 bg-secondary/70`}
           />
         </div>
       </div>

@@ -17,8 +17,8 @@ export type TextFieldProps = {
 
 const TextField = (props: TextFieldProps) => {
   return (
-    <div className={clsx("flex flex-col items-center gap-1 w-full", props.className)}>
-      <div className={`flex flex-col w-[90%] `}>
+    <div className={clsx("flex flex-col max-md:items-center gap-1 w-full", props.className)}>
+      <div className={`flex flex-col max-md:w-[90%] w-full`}>
        <label className={`${manropeFont.className}  text-primary text-[18px]`}>{props.label}</label>
       
       <input

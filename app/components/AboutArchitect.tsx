@@ -15,7 +15,7 @@ const AboutArchitect = () => {
         <motion.h1 initial={initialVariant}
           whileInView={viewVariant}
           transition={transitionVariant}
-          viewport={viewPortVariant} className="font-boskaMedium text-primary text-[48px] lg:text-[128px] z-20 leading-none">
+          viewport={viewPortVariant} className="font-boskaMedium text-primary text-[48px] lg:text-[96px] z-20 leading-none">
           The Architect
         </motion.h1>
         <motion.p
@@ -23,7 +23,7 @@ const AboutArchitect = () => {
           whileInView={viewVariant}
           transition={transitionVariant}
           viewport={viewPortVariant}
-          className={`${manropeFont.className} text-[20px] lg:text-[40px] text-primary mt-[12px]`}
+          className={`${manropeFont.className} text-[18px] lg:text-[32px] text-primary mt-[12px]`}
         >
           Vishal Sharma, Lead Architect
         </motion.p>
@@ -32,7 +32,7 @@ const AboutArchitect = () => {
           whileInView={viewVariant}
           transition={transitionVariant}
           viewport={viewPortVariant}
-          className={`mt-[48px] ${manropeFont.className} text-[16px] lg:text-[30px] text-primary font-[300]`}
+          className={`mt-[48px] ${manropeFont.className} text-[12px] lg:text-[24px] text-primary font-[300]`}
         >
           Sanctuary comes to life under the creative hand of Mr. Vishal Sharma,
           Confluence&apos;s lead architect. Widely admired for merging classic beauty

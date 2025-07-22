@@ -38,14 +38,16 @@ const Form = () => {
 
 
   const handleFormSubmission = async () => {
+    console.log('in handler');
+    
     const isFormValidated = handleFormValidation();
     if (!isFormValidated) {
       alert("Invalid values submitted in the form!");
       return;
     }
-
-
     const responseFromAction = await submitForm(formData);
+    console.log(responseFromAction);
+    
     if (responseFromAction) {
       alert("Form submitted successfully!");
       setStatus();
@@ -131,7 +133,7 @@ const Form = () => {
       </div>
 
       <div
-        className={`flex items-center lg:flex-row lg:justify-center self-start gap-3 text-[18px] text-primary ${manropeFont.className}`}
+        className={`flex items-center lg:flex-row lg:justify-center self-start gap-3 text-[20px] text-primary ${manropeFont.className}`}
       >
         <div
         className="cursor-pointer"
@@ -150,7 +152,7 @@ const Form = () => {
       <PrimaryButton
         text="Submit Form"
         onTap={handleFormSubmission}
-        className={`p-[20px_40px] lg:self-start self-center max-lg:w-[90%] lg:p-[20px_40px] text-[18px] lg:text-[24px] ${manropeFont.className} bg-submit text-secondary hover:bg-submit/90
+        className={`p-[20px_40px] lg:self-start self-center max-lg:w-full lg:p-[20px_40px] text-[20px] lg:text-[24px] ${manropeFont.className} bg-submit text-secondary hover:bg-submit/90
           `}
       />
     </div>
