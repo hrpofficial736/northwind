@@ -4,14 +4,12 @@ import PrimaryButton from '@/components/buttons/PrimaryButton';
 import HamBurger from '@/components/icons/HamBurger';
 import React, { useState } from 'react';
 import Navigation from './Navigation';
-import { useDisclaimerStore } from '@/stores/useDisclaimerStore';
 
 const NavBar = () => {
   const [showNavigation, setShowNavigation] = useState<boolean>(false);
-  const { show } = useDisclaimerStore();
   return (
     <div>
-      <div className={`bg-[rgba(194,181,133,0.5)] w-full px-[17px] py-[8px] flex items-center justify-between ${(show) && "blur-2xl"}`}>
+      <div className={`bg-[rgba(194,181,133,0.5)] w-full px-[17px] py-[8px] flex items-center justify-between`}>
       <div onClick={() => setShowNavigation(true)}>
         <HamBurger />
       </div>

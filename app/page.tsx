@@ -11,11 +11,9 @@ import SustainablyDesigned from "./components/SustainablyDesigned";
 import Footer from "./components/Footer";
 import ImageGallery from "./components/ImageGallery";
 import Disclaimer from "./components/Disclaimer";
-import { useDisclaimerStore } from "@/stores/useDisclaimerStore";
 
 export default function Home() {
   const ref = useRef<HTMLDivElement | null>(null);
-  const { show } = useDisclaimerStore();
 
   useEffect(() => {
     window.scrollBy({
@@ -23,17 +21,16 @@ export default function Home() {
     })
   }, [])
   return (
-    <div ref={ref} className={`w-screen h-screen overflow-x-hidden relative ${show && "overflow-hidden"}`}>
+    <div ref={ref} className={`w-screen h-screen overflow-x-hidden relative`}>
       <NavBar />
       <Hero />
-     
       <ImageGallery />
       <MasterfullyPlanned />
-      <Disclaimer />
       <ConstructionUpdates />
       <SustainablyDesigned />
       <ConnectWithUs />
       <AboutArchitect />
+      <Disclaimer />
       <Footer />
     </div>
   );

@@ -19,27 +19,25 @@ const Form = () => {
     isSigned: false,
   });
 
-
   const handleFormValidation = () => {
     if (
       formData.name.length === 0 ||
       formData.email.length === 0 ||
       formData.message.length === 0 ||
       formData.mobile.length === 0
-    ) return false;
+    )
+      return false;
 
     if (!formData.email.includes("@")) return false;
 
     if (!Number.isInteger(Number.parseInt(formData.mobile))) return false;
 
-
     return true;
-  }
-
+  };
 
   const handleFormSubmission = async () => {
-    console.log('in handler');
-    
+    console.log("in handler");
+
     const isFormValidated = handleFormValidation();
     if (!isFormValidated) {
       alert("Invalid values submitted in the form!");
@@ -47,12 +45,16 @@ const Form = () => {
     }
     const responseFromAction = await submitForm(formData);
     console.log(responseFromAction);
-    
+
     if (responseFromAction) {
       alert("Form submitted successfully!");
+
+      if (localStorage.getItem("download-brochure") === "yes")
+        window.open("/assets/certificates/Brochure.pdf", "blank");
       setStatus();
+      localStorage.setItem("download-brochure", "no")
     }
-  }
+  };
 
   return (
     <div className="f-c-col lg:w-[60%] py-[20px] gap-[36px]">
@@ -136,7 +138,7 @@ const Form = () => {
         className={`flex items-center lg:flex-row lg:justify-center self-start gap-3 text-[20px] text-primary ${manropeFont.className}`}
       >
         <div
-        className="cursor-pointer"
+          className="cursor-pointer"
           onClick={() =>
             setFormData((prevData) => ({
               ...prevData,

@@ -6,14 +6,12 @@ import React from "react";
 import RareLiving from "./RareLiving";
 import { motion } from "framer-motion";
 import { useMotionVariants } from "@/utils/motionVariant";
-import { useDisclaimerStore } from "@/stores/useDisclaimerStore";
 
 const Hero = () => {
   const { initialVariant, viewVariant, transitionVariant, viewPortVariant } =
     useMotionVariants();
-  const { show } = useDisclaimerStore();
   return (
-    <section className={`w-full lg:h-[375vh] bg-primary relative ${(show) && "blur-2xl"}`}>
+    <section className={`w-full lg:h-[375vh] bg-primary relative`}>
       <div className="sticky top-0 h-[100vh] w-full z-0">
         <video
           className="object-cover h-full w-full"

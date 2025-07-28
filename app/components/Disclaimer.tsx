@@ -1,33 +1,14 @@
 
-"use client";
-
-import { AnimatePresence, motion } from "framer-motion";
 import Cross from "@/components/icons/Cross";
 import { manropeFont } from "@/utils/fonts";
 import React from "react";
-import { useDisclaimerStore } from "@/stores/useDisclaimerStore";
 
 const Disclaimer = () => {
-  const { show, setShow } = useDisclaimerStore();
   return (
-    <AnimatePresence>
-      {show && (
-        <motion.div
-            initial={{
-                opacity: 0
-            }} animate={{
-                opacity: 1
-            }}
-            transition={{
-                duration: 0.3,
-                type: "tween"
-            }}
-            exit={{
-                opacity: 0
-            }}
-        className="bg-secondary max-md:w-[90%] p-[20px_18px] lg:p-[30px] rounded-2xl flex flex-col absolute z-[9999] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+    <div
+            
+        className="bg-black max-md:w-[90%] p-[20px_18px] lg:p-[30px] flex flex-col">
           <div
-            onClick={() => setShow()}
             className="self-start lg:self-end p-0 rounded-xl cursor-pointer"
           >
             <Cross />
@@ -48,9 +29,7 @@ const Disclaimer = () => {
             <br />
             RERA No: UPRERAPRJ798312/05/2025
           </p>
-        </motion.div>
-      )}
-    </AnimatePresence>
+        </div>
   );
 };
 

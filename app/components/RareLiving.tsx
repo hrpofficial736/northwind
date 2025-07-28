@@ -1,3 +1,4 @@
+
 import PrimaryButton from "@/components/buttons/PrimaryButton";
 import SecondaryButton from "@/components/buttons/SecondaryButton";
 import Aeroplane from "@/components/icons/Aeroplane";
@@ -149,10 +150,12 @@ const RareLiving = () => {
             onTap={() => {
               if (status) {
                 window.open("/assets/certificates/Brochure.pdf", "blank");
+                localStorage.setItem("download-brochure", "yes")
               }
               else {
-                alert("Please fill the form before downloading brochure!")
                 document.getElementById("connect-with-us")?.scrollIntoView({behavior:"smooth"})
+                localStorage.setItem("download-brochure", "yes")
+                alert("Please fill the form before downloading brochure!")
               }
             }}
             className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className} hover:bg-primary/50 hover:text-secondary duration-200 bg-secondary/70 text-primary`}

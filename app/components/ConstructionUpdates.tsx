@@ -87,12 +87,12 @@ const ConstructionUpdates = () => {
         </motion.p>
       </div>
 
-      <div className={`${(display || showSiteVideo) && "brightness-50"} w-full flex justify-end gap-1 items-center`}>
+      <div className={`${(display || showSiteVideo) && "brightness-50"} w-full flex justify-center gap-1 items-center`}>
         <LeftArrow
           onClick={handlePrev}
           className="text-primary cursor-pointer"
         />
-        <div className="w-full lg:w-[25%] overflow-x-hidden flex justify-end">
+        <div className="w-full lg:w-[40%] overflow-x-hidden flex justify-center">
           <div
             style={{
               transform: `translateX(-${(caraouselIndex / 4) * 100}%)`,

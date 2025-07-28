@@ -23,7 +23,7 @@ const SustainablyDesigned = () => {
   const [display,setDisplay ] = useState<boolean>(false);
   const { initialVariant, viewVariant, viewPortVariant, transitionVariant } = useMotionVariants();
   return (
-    <div className="w-full lg:h-[1100px] bg-secondary relative p-[88px_24px] lg:p-[120px_40px] flex flex-col gap-[36px]">
+    <div className="w-full bg-secondary relative p-[88px_24px] lg:p-[120px_40px] flex flex-col gap-[36px]">
       <div className={`flex flex-col justify-center ${display && "brightness-50"}`}>
         <motion.h1 initial={initialVariant}
           whileInView={viewVariant}
@@ -78,29 +78,7 @@ const SustainablyDesigned = () => {
         </div>
       </div>
 
-      <div className={`flex flex-col items-center md:flex-row md:justify-center gap-5 mt-[28px] lg:mt-[32px] w-full ${display && "brightness-50"}`}>
-        <PrimaryButton
-          text="View Certification"
-         onTap={()=>{
-                     setDisplay(true)
-                   }}
-                   className={`p-[20px_40px] max-lg:w-[90%] lg:p-[20px_40px] text-[16px] lg:text-[24px] hover:bg-white/10 ${manropeFont.className} text-primary bg-transparent border
-                    border-primary`}
-                 />
-  
-          
-        
-        <SecondaryButton
-          text="Green Guidelines PDF"
-          onTap={() => {
-            window.open("/assets/certificates/IGBC GUIDELINES.pdf", "blank")
-          }}
-          className={`p-[20px_40px] max-md:w-[90%] lg:p-[20px_40px] text-[16px] lg:text-[24px] hover:bg-white/10 ${
-            manropeFont.className
-          } text-primary bg-transparent border
-           border-primary`}
-        />
-        </div>
+      
       
         <FullCertificate display={display} setDisplay={setDisplay}/>
 
