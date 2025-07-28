@@ -1,5 +1,4 @@
 
-import Cross from "@/components/icons/Cross";
 import { manropeFont } from "@/utils/fonts";
 import React from "react";
 
@@ -8,12 +7,7 @@ const Disclaimer = () => {
     <div
             
         className="bg-black max-md:w-[90%] p-[20px_18px] lg:p-[30px] flex flex-col">
-          <div
-            className="self-start lg:self-end p-0 rounded-xl cursor-pointer"
-          >
-            <Cross />
-          </div>
-
+          
           <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none mt-[32px]">
             disclaimer
           </h1>
