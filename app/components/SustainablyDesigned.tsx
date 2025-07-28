@@ -1,7 +1,5 @@
 "use client";
 
-import PrimaryButton from "@/components/buttons/PrimaryButton";
-import SecondaryButton from "@/components/buttons/SecondaryButton";
 import Bulb from "@/components/icons/Bulb";
 import Cloud from "@/components/icons/Cloud";
 import Recycle from "@/components/icons/Recycle";
