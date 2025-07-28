@@ -6,7 +6,7 @@ const Disclaimer = () => {
   return (
     <div
             
-        className="bg-black max-md:w-[90%] p-[20px_18px] lg:p-[30px] flex flex-col">
+        className="bg-secondary max-md:w-[90%] p-[20px_18px] lg:p-[30px] flex flex-col">
           
           <h1 className="font-boskaMedium text-primary text-[64px] lg:text-[96px] z-20 leading-none mt-[32px]">
             disclaimer

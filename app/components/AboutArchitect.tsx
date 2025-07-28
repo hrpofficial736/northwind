@@ -8,7 +8,7 @@ import { useMotionVariants } from "@/utils/motionVariant";
 const AboutArchitect = () => {
   const { initialVariant, viewVariant, viewPortVariant, transitionVariant } = useMotionVariants();
   return (
-    <div id="about-architect" className="w-full md:h-[906px] relative flex flex-col max-md:flex-col-reverse justify-center bg-input">
+    <div id="about-architect" className="w-full md:h-[100vh] relative flex flex-col max-md:flex-col-reverse justify-center bg-input">
       
       <div className="bg-[url('/assets/architect-new.png')] w-full md:h-full min-h-[400px] bg-contain bg-center lg:bg-right bg-no-repeat bg-secondary" />
       <div className="flex flex-col max-lg:justify-end lg:justify-center md:max-w-[45%] max-md:bg-secondary p-[64px_24px] md:absolute md:inset-0 md:m-[120px_40px]">

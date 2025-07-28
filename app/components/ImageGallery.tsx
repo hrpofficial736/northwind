@@ -27,7 +27,7 @@ const ImageGallery = () => {
   };
 
   return (
-    <div className="w-full relative p-[64px_24px] lg:p-[80px_36px] bg-primary flex flex-col gap-[32px]">
+    <div className="w-full relative p-[64px_24px] lg:p-[200px_36px] bg-primary flex flex-col gap-[32px]">
       <div className="flex flex-col justify-center">
         <motion.h1
           initial={initialVariant}
