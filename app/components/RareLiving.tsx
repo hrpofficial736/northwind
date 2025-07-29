@@ -168,7 +168,7 @@ const RareLiving = () => {
                 "blank"
               );
             }}
-            className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className}  hover:bg-primary/50 hover:text-secondary duration-200 bg-secondary/70`}
+            className={`p-[20px_40px] max-lg:w-[90%] text-[16px] lg:text-[24px] ${manropeFont.className}  hover:bg-secondary/50 hover:text-primary duration-200 bg-primary/70`}
           />
         </div>
       </div>
