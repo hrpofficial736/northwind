@@ -42,7 +42,7 @@ export const metadata: Metadata = {
     },
   },
    
-  icons:["/favicon.svg"],
+  icons:["/favvicon.svg"],
   openGraph: {
     title: "Northwind Sanctuary - Premium Sustainable Real Estate Development",
     description: "Discover Northwind Sanctuary, where sustainable living meets luxury. Premium real estate development with abundant greenery and natural landscapes.",
